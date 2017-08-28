@@ -1,0 +1,1037 @@
+2017-08-22 18:05:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'qa.extensions.myextensions.SpiderOpenCloseLogging']
+2017-08-22 18:05:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'qa.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-08-22 18:05:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-08-22 18:05:25 [scrapy.middleware] INFO: Enabled item pipelines:
+['qa.pipelines.MongoPipeline']
+2017-08-22 18:05:25 [scrapy.core.engine] INFO: Spider opened
+2017-08-22 18:05:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-08-22 18:05:25 [qa.extensions.myextensions] INFO: opened spider hello worldqaspider
+2017-08-22 18:05:26 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-08-22 18:05:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/robots.txt> (referer: None)
+2017-08-22 18:05:31 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000000.html> (referer: None)
+2017-08-22 18:05:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000076.html> (referer: http://www.mafengwo.cn/wenda/detail-1000000.html)
+2017-08-22 18:05:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000077.html> (referer: http://www.mafengwo.cn/wenda/detail-1000076.html)
+2017-08-22 18:05:40 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000078.html> (referer: http://www.mafengwo.cn/wenda/detail-1000077.html)
+2017-08-22 18:05:44 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000079.html> (referer: http://www.mafengwo.cn/wenda/detail-1000078.html)
+2017-08-22 18:05:48 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000080.html> (referer: http://www.mafengwo.cn/wenda/detail-1000079.html)
+2017-08-22 18:05:51 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000081.html> (referer: http://www.mafengwo.cn/wenda/detail-1000080.html)
+2017-08-22 18:05:55 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000082.html> (referer: http://www.mafengwo.cn/wenda/detail-1000081.html)
+2017-08-22 18:05:57 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000083.html> (referer: http://www.mafengwo.cn/wenda/detail-1000082.html)
+2017-08-22 18:06:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000084.html> (referer: http://www.mafengwo.cn/wenda/detail-1000083.html)
+2017-08-22 18:06:04 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000085.html> (referer: http://www.mafengwo.cn/wenda/detail-1000084.html)
+2017-08-22 18:06:08 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000086.html> (referer: http://www.mafengwo.cn/wenda/detail-1000085.html)
+2017-08-22 18:06:13 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000087.html> (referer: http://www.mafengwo.cn/wenda/detail-1000086.html)
+2017-08-22 18:06:15 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000088.html> (referer: http://www.mafengwo.cn/wenda/detail-1000087.html)
+2017-08-22 18:06:19 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000089.html> (referer: http://www.mafengwo.cn/wenda/detail-1000088.html)
+2017-08-22 18:06:25 [scrapy.extensions.logstats] INFO: Crawled 16 pages (at 16 pages/min), scraped 0 items (at 0 items/min)
+2017-08-22 18:06:25 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000090.html> (referer: http://www.mafengwo.cn/wenda/detail-1000089.html)
+2017-08-22 18:06:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000091.html> (referer: http://www.mafengwo.cn/wenda/detail-1000090.html)
+2017-08-22 18:06:28 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000092.html> (referer: http://www.mafengwo.cn/wenda/detail-1000091.html)
+2017-08-22 18:06:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000093.html> (referer: http://www.mafengwo.cn/wenda/detail-1000092.html)
+2017-08-22 18:06:36 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000094.html> (referer: http://www.mafengwo.cn/wenda/detail-1000093.html)
+2017-08-22 18:06:40 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000095.html> (referer: http://www.mafengwo.cn/wenda/detail-1000094.html)
+2017-08-22 18:06:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000096.html> (referer: http://www.mafengwo.cn/wenda/detail-1000095.html)
+2017-08-22 18:06:48 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000097.html> (referer: http://www.mafengwo.cn/wenda/detail-1000096.html)
+2017-08-22 18:06:50 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000098.html> (referer: http://www.mafengwo.cn/wenda/detail-1000097.html)
+2017-08-22 18:06:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000099.html> (referer: http://www.mafengwo.cn/wenda/detail-1000098.html)
+2017-08-22 18:06:57 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000100.html> (referer: http://www.mafengwo.cn/wenda/detail-1000099.html)
+2017-08-22 18:07:02 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000101.html> (referer: http://www.mafengwo.cn/wenda/detail-1000100.html)
+2017-08-22 18:07:05 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000102.html> (referer: http://www.mafengwo.cn/wenda/detail-1000101.html)
+2017-08-22 18:07:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000103.html> (referer: http://www.mafengwo.cn/wenda/detail-1000102.html)
+2017-08-22 18:07:13 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000104.html> (referer: http://www.mafengwo.cn/wenda/detail-1000103.html)
+2017-08-22 18:07:17 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000105.html> (referer: http://www.mafengwo.cn/wenda/detail-1000104.html)
+2017-08-22 18:07:21 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000106.html> (referer: http://www.mafengwo.cn/wenda/detail-1000105.html)
+2017-08-22 18:07:25 [scrapy.extensions.logstats] INFO: Crawled 33 pages (at 17 pages/min), scraped 0 items (at 0 items/min)
+2017-08-22 18:07:26 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000107.html> (referer: http://www.mafengwo.cn/wenda/detail-1000106.html)
+2017-08-22 18:07:29 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000108.html> (referer: http://www.mafengwo.cn/wenda/detail-1000107.html)
+2017-08-22 18:07:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000109.html> (referer: http://www.mafengwo.cn/wenda/detail-1000108.html)
+2017-08-22 18:07:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000110.html> (referer: http://www.mafengwo.cn/wenda/detail-1000109.html)
+2017-08-22 18:07:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000111.html> (referer: http://www.mafengwo.cn/wenda/detail-1000110.html)
+2017-08-22 18:07:44 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000112.html> (referer: http://www.mafengwo.cn/wenda/detail-1000111.html)
+2017-08-22 18:07:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000113.html> (referer: http://www.mafengwo.cn/wenda/detail-1000112.html)
+2017-08-22 18:07:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000113.html>
+{'data': {'_id': ObjectId('599c02765e5cca39d1899907'),
+          'answer': [['2',
+                      '位于南墨尔本的皇冠逍遥之都是墨尔本市的娱乐与博彩胜地，赌博设施十分齐全，并拥有多家精美餐厅、休闲式河畔咖啡馆、酒吧和夜总会、时装店、各种娱乐设施。墨尔本板球场是澳大利亚著名的体育超级舞台。或者在亚拉河乘船巡游，到丽爱图塔观景台欣赏墨尔本美景，都是不错的休闲方式。另外，这里丰富多彩的节庆活动也不可错过。                               '],
+                     ['4',
+                      '皇冠赌场 南半球最大的赌场 去长长见识也好 每个整点大门口会有焰火表演尤里卡88观景台 南半球最高的观景台 '
+                      '能看到整个墨尔本的夜景 门票也就十几刀亚拉河畔看墨尔本CITY的夜景 '
+                      '高楼大厦倒映在河面上的样子非常美                               '],
+                     ['0',
+                      '到丽爱图塔观景台上可以360度眺望墨尔本全景                               '],
+                     ['0', '墨尔本尤利卡88 观景台                               '],
+                     ['0', '丽爱图塔观景台                               '],
+                     ['0', '好基情！！！                               ']],
+          'detail': '两个晚上都在不想耗在酒店想出去玩 不知道那边哪里的夜景比较好？或者有什么推荐的酒吧吗？谢谢我们是四个男的一起。。。',
+          'lables': ['墨尔本'],
+          'location': '墨尔本',
+          'title': '两个晚上都在墨尔本，不知道那边哪里看夜景比较好？晚上去哪玩比较好呢？谢谢'}}
+2017-08-22 18:07:51 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000114.html> (referer: http://www.mafengwo.cn/wenda/detail-1000113.html)
+2017-08-22 18:07:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000115.html> (referer: http://www.mafengwo.cn/wenda/detail-1000114.html)
+2017-08-22 18:08:01 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000116.html> (referer: http://www.mafengwo.cn/wenda/detail-1000115.html)
+2017-08-22 18:08:02 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000117.html> (referer: http://www.mafengwo.cn/wenda/detail-1000116.html)
+2017-08-22 18:08:07 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000118.html> (referer: http://www.mafengwo.cn/wenda/detail-1000117.html)
+2017-08-22 18:08:13 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000119.html> (referer: http://www.mafengwo.cn/wenda/detail-1000118.html)
+2017-08-22 18:08:14 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000120.html> (referer: http://www.mafengwo.cn/wenda/detail-1000119.html)
+2017-08-22 18:08:19 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000121.html> (referer: http://www.mafengwo.cn/wenda/detail-1000120.html)
+2017-08-22 18:08:21 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000122.html> (referer: http://www.mafengwo.cn/wenda/detail-1000121.html)
+2017-08-22 18:08:24 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000123.html> (referer: http://www.mafengwo.cn/wenda/detail-1000122.html)
+2017-08-22 18:08:25 [scrapy.extensions.logstats] INFO: Crawled 50 pages (at 17 pages/min), scraped 1 items (at 1 items/min)
+2017-08-22 18:08:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000124.html> (referer: http://www.mafengwo.cn/wenda/detail-1000123.html)
+2017-08-22 18:08:36 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000125.html> (referer: http://www.mafengwo.cn/wenda/detail-1000124.html)
+2017-08-22 18:08:41 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000126.html> (referer: http://www.mafengwo.cn/wenda/detail-1000125.html)
+2017-08-22 18:08:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000127.html> (referer: http://www.mafengwo.cn/wenda/detail-1000126.html)
+2017-08-22 18:08:46 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000128.html> (referer: http://www.mafengwo.cn/wenda/detail-1000127.html)
+2017-08-22 18:08:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000129.html> (referer: http://www.mafengwo.cn/wenda/detail-1000128.html)
+2017-08-22 18:08:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000130.html> (referer: http://www.mafengwo.cn/wenda/detail-1000129.html)
+2017-08-22 18:09:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000131.html> (referer: http://www.mafengwo.cn/wenda/detail-1000130.html)
+2017-08-22 18:09:07 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000132.html> (referer: http://www.mafengwo.cn/wenda/detail-1000131.html)
+2017-08-22 18:09:10 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000133.html> (referer: http://www.mafengwo.cn/wenda/detail-1000132.html)
+2017-08-22 18:09:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000134.html> (referer: http://www.mafengwo.cn/wenda/detail-1000133.html)
+2017-08-22 18:09:16 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000135.html> (referer: http://www.mafengwo.cn/wenda/detail-1000134.html)
+2017-08-22 18:09:20 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000136.html> (referer: http://www.mafengwo.cn/wenda/detail-1000135.html)
+2017-08-22 18:09:25 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000137.html> (referer: http://www.mafengwo.cn/wenda/detail-1000136.html)
+2017-08-22 18:09:25 [scrapy.extensions.logstats] INFO: Crawled 64 pages (at 14 pages/min), scraped 1 items (at 0 items/min)
+2017-08-22 18:09:28 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000138.html> (referer: http://www.mafengwo.cn/wenda/detail-1000137.html)
+2017-08-22 18:09:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000139.html> (referer: http://www.mafengwo.cn/wenda/detail-1000138.html)
+2017-08-22 18:09:36 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000140.html> (referer: http://www.mafengwo.cn/wenda/detail-1000139.html)
+2017-08-22 18:09:40 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000141.html> (referer: http://www.mafengwo.cn/wenda/detail-1000140.html)
+2017-08-22 18:09:45 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000142.html> (referer: http://www.mafengwo.cn/wenda/detail-1000141.html)
+2017-08-22 18:09:47 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000143.html> (referer: http://www.mafengwo.cn/wenda/detail-1000142.html)
+2017-08-22 18:09:52 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000144.html> (referer: http://www.mafengwo.cn/wenda/detail-1000143.html)
+2017-08-22 18:09:55 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000145.html> (referer: http://www.mafengwo.cn/wenda/detail-1000144.html)
+2017-08-22 18:09:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000146.html> (referer: http://www.mafengwo.cn/wenda/detail-1000145.html)
+2017-08-22 18:09:58 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000146.html>
+{'data': {'_id': ObjectId('599c02f65e5cca39d1899909'),
+          'answer': [['0',
+                      '巴厘岛机场距离库塔非常非常近，开车20分钟足够了，出关预留出来1小时。                               '],
+                     ['1',
+                      '不是很远，但是车走走停停的，花了大概需要2个小时，如果你是包车那应该快些。我上次去的是海神庙--&gt; '
+                      '情人崖 &gt;母神庙, 没去过乌布，库塔在乌布北边, '
+                      '一天行程如果只走库塔跟乌布，时间够了，一般是早上8点出发吧，如果你不想走马观花的话。                               '],
+                     ['0',
+                      '一般好像是从海神庙先走然后去百度库。不是很远我们当时走走停停好像花了两个小时，也可以包车的。                               '],
+                     ['0', '2个多小时吧                               ']],
+          'detail': '早上7点45的飞机到.从出关到库塔 '
+                    '大概需要多长时间?.因为要预约包车,当天直接去乌布玩.那么按照这速度几点让司机来接比较合适?. '
+                    '（有送接机,所以出了关直接会上的车到酒店）',
+          'lables': ['出入境', '巴厘岛', '海关'],
+          'location': '巴厘岛',
+          'title': '早上7点45到巴厘岛.出关到库塔 大概需要多长时间？'}}
+2017-08-22 18:10:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000147.html> (referer: http://www.mafengwo.cn/wenda/detail-1000146.html)
+2017-08-22 18:10:05 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000148.html> (referer: http://www.mafengwo.cn/wenda/detail-1000147.html)
+2017-08-22 18:10:07 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000149.html> (referer: http://www.mafengwo.cn/wenda/detail-1000148.html)
+2017-08-22 18:10:11 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000150.html> (referer: http://www.mafengwo.cn/wenda/detail-1000149.html)
+2017-08-22 18:10:22 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000151.html> (referer: http://www.mafengwo.cn/wenda/detail-1000150.html)
+2017-08-22 18:10:25 [scrapy.extensions.logstats] INFO: Crawled 78 pages (at 14 pages/min), scraped 2 items (at 1 items/min)
+2017-08-22 18:10:28 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000152.html> (referer: http://www.mafengwo.cn/wenda/detail-1000151.html)
+2017-08-22 18:10:33 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000153.html> (referer: http://www.mafengwo.cn/wenda/detail-1000152.html)
+2017-08-22 18:10:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000154.html> (referer: http://www.mafengwo.cn/wenda/detail-1000153.html)
+2017-08-22 18:10:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000155.html> (referer: http://www.mafengwo.cn/wenda/detail-1000154.html)
+2017-08-22 18:10:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000156.html> (referer: http://www.mafengwo.cn/wenda/detail-1000155.html)
+2017-08-22 18:10:49 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000157.html> (referer: http://www.mafengwo.cn/wenda/detail-1000156.html)
+2017-08-22 18:10:51 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000158.html> (referer: http://www.mafengwo.cn/wenda/detail-1000157.html)
+2017-08-22 18:10:55 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000159.html> (referer: http://www.mafengwo.cn/wenda/detail-1000158.html)
+2017-08-22 18:10:56 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000160.html> (referer: http://www.mafengwo.cn/wenda/detail-1000159.html)
+2017-08-22 18:11:01 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000161.html> (referer: http://www.mafengwo.cn/wenda/detail-1000160.html)
+2017-08-22 18:11:03 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000162.html> (referer: http://www.mafengwo.cn/wenda/detail-1000161.html)
+2017-08-22 18:11:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000163.html> (referer: http://www.mafengwo.cn/wenda/detail-1000162.html)
+2017-08-22 18:11:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000163.html>
+{'data': {'_id': ObjectId('599c033d5e5cca39d189990b'),
+          'answer': [['7',
+                      '有时间可以玩一个月，以下景点供参考：（一） 曼谷 曼谷是泰国的首都，主要旅游景点：1． 大皇宫和玉佛寺 '
+                      '大皇宫位于曼谷市中心，玉佛寺与大皇宫紧紧相连，整个佛寺装饰金碧辉煌，大雄宝殿内供奉的翡玉佛（释迦牟尼）是泰国最重要、最有价值的国宝。2． '
+                      '威玛曼宫殿 是世界上最大的用柚木建造的三层楼建筑物，宫殿内收藏了许多皇家的纪念品。3． 国家博物馆 '
+                      '靠近大皇宫附近，远至石器时代，近至当代的曼谷王朝时期，各种文献、民间器具、古佛像、国王御用武器、船及各种用品，无不齐备。4． '
+                      '四面佛 位于爱侣湾凯悦大酒店的路角上，人称有求必应佛，该佛有四尊佛面，是香火最旺的佛像之一。5． '
+                      '卧佛寺（菩提寺） 位于大皇宫的南面，是曼谷最老和最大的寺院，寺内供奉着一尊特大的卧佛。6． 郑王庙（黎明寺） '
+                      '位于湄南河之西岸，与卧佛寺隔岸相望，是最富吸引力的建筑物。在晨曦之际，阳光照射，宝塔的顶端发出万丈光芒，故又被称为黎明寺。7． '
+                      '金佛寺 位于曼谷火车总站西南侧，寺内供有一座高3米、相传是素可泰时代传下来的、重五吨半的黄金铸成的佛像。8． '
+                      '水上市场 '
+                      '水上市场是当地重要的商业中心，每天早上8点到11点，方便游客前往参观的有二处：一处曼谷越西水上市场，；另一处是在呖武里府的丹能沙都阿水上市场，9．蛇园 '
+                      '位于拍喃四路朱拉医院西侧，是泰国红十字会的研究所及世界上两个最早的毒蛇研究中心之一。10．北榄府鳄鱼湖动物园 '
+                      '距离曼谷市区10公里，是世界最大的鳄鱼养殖场。（二） '
+                      '芭堤雅芭堤雅位于曼谷东南147公里处，就泰国著名的旅游度假胜地，享有东方夏威夷之誉。1． 珊瑚岛 '
+                      '距离芭堤雅9公里，是芭堤雅海滩外最大的岛。2．小人国 '
+                      '是一坐微缩主题公园。让人们能够在较短的时间内对泰国的名胜古迹、历史文化、民族风情有所了解。3．拉差龙虎园 '
+                      '是目前世界上养虎规模最大的园地。4．人妖表演 这是仁者见仁，智者见智的一出，看你的兴趣程度。（三） '
+                      '清迈清迈是泰国第二大城市，距曼谷约800公里，市郊西北16公里处有素贴山风景区，距市区40公里处有泰国最美丽的嫩江瀑布。该市的玫瑰花、民间传统舞蹈和一年一度的泼水节也很有名。 '
+                      '清迈是柚木集散地。（四） '
+                      '普吉岛距离曼谷约900公里，是位于马来半岛旁印度洋中的一个岛屿，是泰国最大的岛。（五） PP岛 '
+                      '位于普吉岛东南方，从普吉码头乘船约1个半小时即可抵达。PP岛目前仍保留着淳朴原始的韵味，这里是潜水的好地方。（六） '
+                      '其他旅游地1．椰子岛为泰国第三大岛，岛上盛产椰子，故又被誉为椰子岛。2． '
+                      '宋卡：位于泰国南部末端，是一个千年古迹。是亚洲最大的鸟类聚居地之一。3． '
+                      '合艾；泰国宋卡府内重要城镇之一，在曼谷以南974公里，与宋卡市相距仅30分钟车程。是购物天堂。4． '
+                      '华欣：位于碧武里府内，在曼谷以南220公里的暹罗湾西边，与七岩和昭三郎被誉为暹罗湾以西的三大海滨度假胜地，以美丽的风景和种类丰富的海鲜而闻名。                               '],
+                     ['0',
+                      '不知道你需要多么的深度，毕竟一个国家不是一趟十几天的旅行就能了解的，一般来说，如果你南部北部都看看的话，少说15天左右吧~我们这次柬埔寨+泰国，去了曼谷清迈拜县苏梅岛，每个地方只能说介于走马观花和深度游之间~玩得很开心~可以参考正在更新中的游记~希望能帮到你~！                               '],
+                     ['0',
+                      '你想深度泰国，哪里是几天够的啊。如果我还有暑假，我真恨不得有2个月时间呆在那一圈玩下来。你要悠闲的，那曼谷3天，然后体验下泰国的火车，大城也要来个2天，再来素可泰2，清迈3，拜县3，然后回到清迈飞普吉岛3天，最少也要半个月呢。所以你可以先搜索下泰国的那些地方，看看自己更喜欢啥，就侧重玩那里。                               '],
+                     ['5',
+                      '和lz有着同样想法的我去了22天，其中清迈7天，pai3天，曼谷4天，苏梅岛4天。我觉得看lz具体喜欢什么样的旅行。我觉得清迈的安逸挺好的。因为我个人不喜欢芭提雅。所以没有安排。泰国所有地方我都做了功课。lz还有问题可以问我                               '],
+                     ['0',
+                      '关键的一个问题是看你喜欢去哪。通常曼谷3天，清迈3天，pai2天，苏梅2天，普吉4天。如果要去丽贝岛、斯米兰、甲米、涛岛这些，时间还要延长。推荐泰国的火车的卧铺，睡一晚上，从一个城市到另外一个城市，可以省住宿，又能感受窄轨火车的特别之处。另外交通船也可以感受一下。                               '],
+                     ['0',
+                      '拜拜四面佛东西普遍便宜建议换好泰铢过去naraya的包包不错机场的欧莱雅便宜的惊人可以做个古式按摩海边水上活动也比海南三亚什么的便宜男生的话去看人妖秀是旅游的好地方                               '],
+                     ['0',
+                      '普吉可以玩乐游也可以度假游，看你喜欢哪种了。我1月刚去普吉回来，你可以看看我的游记，还是蛮详细的，正在更新中，                               '],
+                     ['2',
+                      '=。=全泰国玩下来？？？  那估计您要玩一个月  如果是普吉的话  不想走马观花玩6天左右  '
+                      '我这边有个行程word亲可加QQ我发给您参考 '
+                      '1621077069                               '],
+                     ['2',
+                      '我们在清迈4天，普吉6天，你可以参考一下我的游记，也许对你有帮助                               '],
+                     ['0',
+                      '五天曼谷、四天芭堤雅、五天清迈清莱、两天华欣、如果你不想走马观花，想好好深度游玩泰国，你需要十六时间，加上前后交通，如有十八天更好，个人建议！                               '],
+                     ['0',
+                      '看你是海岛线还是古迹线路咯泰北都可以玩个5天以上。曼谷也两天了。海岛的话玩个三四天。如果要去素可泰，大城什么的，就更久了                               '],
+                     ['0',
+                      '普吉14天。所有景点都没完全。最少一个月。                               '],
+                     ['0',
+                      '清迈、清莱、pai、花个7天，曼谷、芭提雅5天，找个合适的海岛或海边呆7天。。差不多了                               '],
+                     ['0',
+                      '深度的话就要比较久咯。每个地方都用上四五天，加起来估计一个月呢                               '],
+                     ['0',
+                      '看一下有关游记，再看看什么景点自己喜欢的，好好规划一下。                               ']],
+          'detail': '深度游泰国，各蜂有何见教？',
+          'lables': ['行程', '泰国'],
+          'location': '普吉岛',
+          'title': '去泰国玩几天够，不想要那种走马观花的。'}}
+2017-08-22 18:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000164.html> (referer: http://www.mafengwo.cn/wenda/detail-1000163.html)
+2017-08-22 18:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000164.html>
+{'data': {'_id': ObjectId('599c033f5e5cca39d189990d'),
+          'answer': [['1',
+                      '印度大部分城市的中国人签证延期送到首都新德里，在内政部申请，由当地城市移民局递交上去，不过今年因为一些原因可能是两国关系问题，许多中国人的签证延期迟迟没有消息。所以暂且不谈旅游签证可不可以延期，即使可以延期你也等不了。声明旅游签证不可以延期，探亲签证可以延期。                               '],
+                     ['0',
+                      '出去以后是可以延期，但比较麻烦，不建议那么做。印度签证现在一般是三个月的（某宝卖家不知道很多都说一个月，实际出来是三个月），所以时间对一般的旅行者来说肯定是够的                               '],
+                     ['0',
+                      '印度可以办理签证延签手续的地方很少。目前的签证一般只给7天。7天过后你可以再次申请续签，如果通过一般最多不会超过30天。                               '],
+                     ['1',
+                      '没出去前，印度签证不能延期，只能重新申请。若没过期，也可以重新申请，签下来，之前的就作废了。                               '],
+                     ['0',
+                      '印度签证不能延期，新护照现在办印度签证也有点难度                               '],
+                     ['0', '一般是三个月，延期手续很麻烦。                               '],
+                     ['0', '一般不能延期                               '],
+                     ['0', '不可以延期                               '],
+                     ['0', '不能延期。                               '],
+                     ['0', '不能延期                               ']],
+          'detail': '签证能延期吗？最多能延期多久？',
+          'lables': ['签证', '出入境', '印度'],
+          'location': '印度',
+          'title': '印度签证能延期吗？最多能延期多久？'}}
+2017-08-22 18:11:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000165.html> (referer: http://www.mafengwo.cn/wenda/detail-1000164.html)
+2017-08-22 18:11:18 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000166.html> (referer: http://www.mafengwo.cn/wenda/detail-1000165.html)
+2017-08-22 18:11:22 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000167.html> (referer: http://www.mafengwo.cn/wenda/detail-1000166.html)
+2017-08-22 18:11:25 [scrapy.extensions.logstats] INFO: Crawled 94 pages (at 16 pages/min), scraped 4 items (at 2 items/min)
+2017-08-22 18:11:29 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000168.html> (referer: http://www.mafengwo.cn/wenda/detail-1000167.html)
+2017-08-22 18:11:29 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000169.html> (referer: http://www.mafengwo.cn/wenda/detail-1000168.html)
+2017-08-22 18:11:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000170.html> (referer: http://www.mafengwo.cn/wenda/detail-1000169.html)
+2017-08-22 18:11:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000171.html> (referer: http://www.mafengwo.cn/wenda/detail-1000170.html)
+2017-08-22 18:11:44 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000172.html> (referer: http://www.mafengwo.cn/wenda/detail-1000171.html)
+2017-08-22 18:11:48 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000173.html> (referer: http://www.mafengwo.cn/wenda/detail-1000172.html)
+2017-08-22 18:11:52 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000174.html> (referer: http://www.mafengwo.cn/wenda/detail-1000173.html)
+2017-08-22 18:11:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000175.html> (referer: http://www.mafengwo.cn/wenda/detail-1000174.html)
+2017-08-22 18:12:01 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000176.html> (referer: http://www.mafengwo.cn/wenda/detail-1000175.html)
+2017-08-22 18:12:05 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000177.html> (referer: http://www.mafengwo.cn/wenda/detail-1000176.html)
+2017-08-22 18:12:07 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000178.html> (referer: http://www.mafengwo.cn/wenda/detail-1000177.html)
+2017-08-22 18:12:10 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000179.html> (referer: http://www.mafengwo.cn/wenda/detail-1000178.html)
+2017-08-22 18:12:13 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000180.html> (referer: http://www.mafengwo.cn/wenda/detail-1000179.html)
+2017-08-22 18:12:14 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000181.html> (referer: http://www.mafengwo.cn/wenda/detail-1000180.html)
+2017-08-22 18:12:16 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000182.html> (referer: http://www.mafengwo.cn/wenda/detail-1000181.html)
+2017-08-22 18:12:23 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000183.html> (referer: http://www.mafengwo.cn/wenda/detail-1000182.html)
+2017-08-22 18:12:25 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000184.html> (referer: http://www.mafengwo.cn/wenda/detail-1000183.html)
+2017-08-22 18:12:25 [scrapy.extensions.logstats] INFO: Crawled 111 pages (at 17 pages/min), scraped 4 items (at 0 items/min)
+2017-08-22 18:12:28 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000185.html> (referer: http://www.mafengwo.cn/wenda/detail-1000184.html)
+2017-08-22 18:12:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000186.html> (referer: http://www.mafengwo.cn/wenda/detail-1000185.html)
+2017-08-22 18:12:33 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000187.html> (referer: http://www.mafengwo.cn/wenda/detail-1000186.html)
+2017-08-22 18:12:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000188.html> (referer: http://www.mafengwo.cn/wenda/detail-1000187.html)
+2017-08-22 18:12:41 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000189.html> (referer: http://www.mafengwo.cn/wenda/detail-1000188.html)
+2017-08-22 18:12:46 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000190.html> (referer: http://www.mafengwo.cn/wenda/detail-1000189.html)
+2017-08-22 18:12:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000191.html> (referer: http://www.mafengwo.cn/wenda/detail-1000190.html)
+2017-08-22 18:12:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000191.html>
+{'data': {'_id': ObjectId('599c03a25e5cca39d189990f'),
+          'answer': [['2',
+                      '丽江现在基本上已被开发过度了，没想到还有哪个地方未被开发过，有，也只能算沙溪古镇一个，个人觉得,越是自然的，越是美好，越是远离人类的地方，景色越是美，景色越是美的地方，越是难以到达。所以极力推荐，一路向西，直至最最遥远的这里：昭苏。1.不担心昭苏因此会人满为患----看看昭苏的地理位置。2.这里乱吗？没感觉到，也或许没碰到，总之我所碰到的人大多热情淳朴，特别是昭苏人，大部分是哈萨克族人，很热情好客。3.适合旅行季节？7月-9月去昭苏比较合适，油菜花海一般是7月初到中旬左右，见证奇迹吧！其他季节貌似都很冷，早晚温差大。4.如何到达？本地的就不说了（自驾的话未知）。新jiang以外的 '
+                      '坐火车或飞机先到乌鲁木齐，，然后火车或汽车到伊宁，建议坐火车安全些，双层的旅游火车，一路上的景色就足以震撼你。到了伊宁再转到昭苏的汽车，每天都有 '
+                      '班车去昭苏，大概4小时。这一路的景色也足以秒杀很多地方。5.未发现昭苏有工厂企业啥的，基本都是牧民，牛羊到处可见，大多时候阳光灿烂，纯粹干净的蓝天。6.不用担心吃住问题。昭苏虽是个小县城，但好歹也是县城，有旅馆酒店，有饭店餐厅，有超市商场。县城被油菜花海麦田草原所包围，离得都不是很远，住在县城， '
+                      '我都是徒步在县城周边玩。要真去了昭苏，建议还是多呆些日子，徒步走走，每一寸土地都值得你欣赏。                               '],
+                     ['0',
+                      '拉市海那的村子挺好的。我没去玩，但是我在香格里拉回丽江的车上看到了全景。很美。古镇推荐湖南凤凰古镇，比丽江古镇古朴多了。丽江太商业化，但是有个水库如果有时间可以去那看看安静坐一会，那的视野比较开阔，能远观玉龙雪山。                               '],
+                     ['0',
+                      '大研都是人，很夸张，完全没有古镇的安宁，不太喜欢。束河相比较稍微好点，但也逐渐商业化了，只是人少很多。白沙比较淳朴，去的人比较少。其实丽江基本已经很成熟了，要去还未开发厉害的，可看看坝美！                               '],
+                     ['0',
+                      '云南的话丽江市过度开发了，可以往滇西南方向走走，像腾冲、宝山、临沧等地，不过缺点就是交通不太方便                               '],
+                     ['0',
+                      '丽江的话白沙古镇还没怎么被开发，还保留这比较淳朴的味道，没有大研古镇那么浓的商业气息                               '],
+                     ['0',
+                      '泸沽湖目前还没有过度被开发，情人树还在，尽早去看看吧。女儿国，走婚！                               '],
+                     ['0',
+                      '丽江已经过度开发了，不要太期待。雨崩景色很美，近两年去的人也很多。                               '],
+                     ['0',
+                      '目前基本没有  估计也就泸沽湖、白沙古镇                               '],
+                     ['0', '白沙古镇以及梅里雪山和雨崩都不错                               '],
+                     ['0', '雨崩，就是离丽江太远，过去要1天                               '],
+                     ['0', '白沙古镇应该还可以的。                               '],
+                     ['0', '个人比较喜欢喜洲海舌                               '],
+                     ['0', '我也比较喜欢白沙古镇                               '],
+                     ['0', '雨崩村现在还算原始                               '],
+                     ['0', '坝美，诺邓～                               ']],
+          'detail': '现在有哪些景点是未被过度开发的？不想去商业模式太浓的地方玩？若国内有任何好的景点也请推荐。谢谢',
+          'lables': ['行程', '景点', '丽江'],
+          'location': '丽江',
+          'title': '现在丽江有哪些景点是未被过度开发的？不想去商业模式太浓的地方玩？若国内有任何好的景点也请推荐。谢谢。'}}
+2017-08-22 18:12:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000192.html> (referer: http://www.mafengwo.cn/wenda/detail-1000191.html)
+2017-08-22 18:12:56 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000193.html> (referer: http://www.mafengwo.cn/wenda/detail-1000192.html)
+2017-08-22 18:13:01 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000194.html> (referer: http://www.mafengwo.cn/wenda/detail-1000193.html)
+2017-08-22 18:13:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000195.html> (referer: http://www.mafengwo.cn/wenda/detail-1000194.html)
+2017-08-22 18:13:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000195.html>
+{'data': {'_id': ObjectId('599c03b25e5cca39d1899911'),
+          'answer': [['1',
+                      '艾尔利去布里斯班：1、你可以选择virgin blue 可以直接到PPP机场2、或者到Mackey 在转灰狗 '
+                      '灰狗不贵的 到Airlie beach 大概2个小时车程 不过车子和飞机衔接不好的话 就比较尴尬了。3 恩 '
+                      '澳大利亚的火车的火车不便宜这是我唯一的感受。至于路线是否可行 '
+                      '我没有研究                               '],
+                     ['0',
+                      '推荐你看看这个游记http://bbs.qyer.com/thread-916321-1.html?campaign=weibo_share&amp;category=bbs_read_floor，希望可以帮到你，                               '],
+                     ['0',
+                      '1、到Mackey 在转灰狗 灰狗不贵的 到Airlie beach 大概2个小时车程 '
+                      '不过车子和飞机衔接不好的话 就比较尴尬了。2、选择virgin blue '
+                      '可以直接到PPP机场                               '],
+                     ['0',
+                      '肯定坐飞机啊 澳洲国内段的机票很便宜的                               '],
+                     ['0', '选择virgin blue是明智的~                               '],
+                     ['0', '澳洲国内段的机票很便宜的                               '],
+                     ['0', 'virgin blue                               '],
+                     ['0', '坐灰机去                               '],
+                     ['0', '坐飞机                               ']],
+          'detail': '利如何去布里斯班？',
+          'lables': ['布里斯班', '交通'],
+          'location': '欧洲',
+          'title': '艾尔利如何去布里斯班？'}}
+2017-08-22 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000196.html> (referer: http://www.mafengwo.cn/wenda/detail-1000195.html)
+2017-08-22 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000196.html>
+{'data': {'_id': ObjectId('599c03b55e5cca39d1899913'),
+          'answer': [['1',
+                      '不需要，又不是带大量现金啥的。目前民航局规定：可以携带含超过100Wh但不超过160Wh锂电池的电子设备登机，而且要随身携带不允许托运。普通的备用移动充电器是没问题的。如果电池上只标记有毫安时(mAh)，可将该数值除以1000得到安培小时(Ah) '
+                      '。锂电池标称电压为3.7V，你的充电宝容量为10000 mAh ，那么额定瓦特小时数为：10000 mAh / '
+                      '1000 = '
+                      '10Ah，3.7Vx10Ah=37Wh，禁止携带或托运超过160Wh的大型锂电池或电子设备。按照这样算，你的移动电源是可以带上飞机的。                               '],
+                     ['0',
+                      '不需要，我一月去的时候单反，IPAD，IPHONE，充电宝，都是顺利入境的，不用担心。                               '],
+                     ['0',
+                      '不需要～不是大件物品都不用的～你说的这几样都是正常用品                               '],
+                     ['1', '这个不需要的，又不是去朝鲜，                               '],
+                     ['1', '不需要，不是大宗物品。                               '],
+                     ['0', '相机是不用的啦 手机好像也不用                               '],
+                     ['1', '自己用的话就不用了                               '],
+                     ['0', '都不用报                               '],
+                     ['0', '不需要                               '],
+                     ['0', '不需要                               ']],
+          'detail': '请问！到的办入境手续，手机相机充电宝这些，是不是需要报关呢？',
+          'lables': ['移动电源', '缅甸', '出入境', '安检', '海关'],
+          'location': '缅甸',
+          'title': '请问！到缅甸的办入境手续，手机相机充电宝这些，是不是需要报关呢？'}}
+2017-08-22 18:13:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000197.html> (referer: http://www.mafengwo.cn/wenda/detail-1000196.html)
+2017-08-22 18:13:16 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000198.html> (referer: http://www.mafengwo.cn/wenda/detail-1000197.html)
+2017-08-22 18:13:19 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000199.html> (referer: http://www.mafengwo.cn/wenda/detail-1000198.html)
+2017-08-22 18:13:24 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000200.html> (referer: http://www.mafengwo.cn/wenda/detail-1000199.html)
+2017-08-22 18:13:25 [scrapy.extensions.logstats] INFO: Crawled 127 pages (at 16 pages/min), scraped 7 items (at 3 items/min)
+2017-08-22 18:13:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000201.html> (referer: http://www.mafengwo.cn/wenda/detail-1000200.html)
+2017-08-22 18:13:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000202.html> (referer: http://www.mafengwo.cn/wenda/detail-1000201.html)
+2017-08-22 18:13:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000203.html> (referer: http://www.mafengwo.cn/wenda/detail-1000202.html)
+2017-08-22 18:13:39 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000204.html> (referer: http://www.mafengwo.cn/wenda/detail-1000203.html)
+2017-08-22 18:13:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000205.html> (referer: http://www.mafengwo.cn/wenda/detail-1000204.html)
+2017-08-22 18:13:46 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000206.html> (referer: http://www.mafengwo.cn/wenda/detail-1000205.html)
+2017-08-22 18:13:49 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000207.html> (referer: http://www.mafengwo.cn/wenda/detail-1000206.html)
+2017-08-22 18:13:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000208.html> (referer: http://www.mafengwo.cn/wenda/detail-1000207.html)
+2017-08-22 18:13:57 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000209.html> (referer: http://www.mafengwo.cn/wenda/detail-1000208.html)
+2017-08-22 18:14:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000210.html> (referer: http://www.mafengwo.cn/wenda/detail-1000209.html)
+2017-08-22 18:14:04 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000211.html> (referer: http://www.mafengwo.cn/wenda/detail-1000210.html)
+2017-08-22 18:14:08 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000212.html> (referer: http://www.mafengwo.cn/wenda/detail-1000211.html)
+2017-08-22 18:14:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000213.html> (referer: http://www.mafengwo.cn/wenda/detail-1000212.html)
+2017-08-22 18:14:15 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000214.html> (referer: http://www.mafengwo.cn/wenda/detail-1000213.html)
+2017-08-22 18:14:18 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000215.html> (referer: http://www.mafengwo.cn/wenda/detail-1000214.html)
+2017-08-22 18:14:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000216.html> (referer: http://www.mafengwo.cn/wenda/detail-1000215.html)
+2017-08-22 18:14:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000216.html>
+{'data': {'_id': ObjectId('599c03ff5e5cca39d1899915'),
+          'answer': [['0', '便宜一点 不过不是相差太多                               '],
+                     ['0',
+                      '其實不用特定要在兰卡威買的，因為眼鏡是其中一樣在馬來西亞免稅的物品～！像瑞士的手工名表，電子用品，手機等等都是政府不抽稅的物品～！                               '],
+                     ['0',
+                      '在亚庇看过，比国内便宜。所以兰卡威也一样吧。                               '],
+                     ['0', '会便宜一点，但相差不会太多哦                               '],
+                     ['0', '还是国内买好，可以退换                               '],
+                     ['0', '有的卖的，比国内便宜。                               '],
+                     ['0', '比国内要便宜                               '],
+                     ['0', '便宜一点                               '],
+                     ['0', '便宜些                               '],
+                     ['0', '便宜些                               ']],
+          'detail': '雷朋太阳镜比中国便宜吗？在北京看上一雷朋俱乐部经理款。2700多。不知道会不会便宜点',
+          'lables': ['购物', '兰卡威', '中国'],
+          'location': '兰卡威',
+          'title': '兰卡威，雷朋太阳镜比中国便宜吗？'}}
+2017-08-22 18:14:25 [scrapy.extensions.logstats] INFO: Crawled 143 pages (at 16 pages/min), scraped 8 items (at 1 items/min)
+2017-08-22 18:14:25 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000217.html> (referer: http://www.mafengwo.cn/wenda/detail-1000216.html)
+2017-08-22 18:14:29 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000218.html> (referer: http://www.mafengwo.cn/wenda/detail-1000217.html)
+2017-08-22 18:14:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000219.html> (referer: http://www.mafengwo.cn/wenda/detail-1000218.html)
+2017-08-22 18:14:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000220.html> (referer: http://www.mafengwo.cn/wenda/detail-1000219.html)
+2017-08-22 18:14:39 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000221.html> (referer: http://www.mafengwo.cn/wenda/detail-1000220.html)
+2017-08-22 18:14:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000222.html> (referer: http://www.mafengwo.cn/wenda/detail-1000221.html)
+2017-08-22 18:14:47 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000223.html> (referer: http://www.mafengwo.cn/wenda/detail-1000222.html)
+2017-08-22 18:14:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000224.html> (referer: http://www.mafengwo.cn/wenda/detail-1000223.html)
+2017-08-22 18:14:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000224.html>
+{'data': {'_id': ObjectId('599c041e5e5cca39d1899917'),
+          'answer': [['2',
+                      '泸沽湖的公路修好了，从丽江到泸沽湖的路不是很好走，基本上是山路，车程大概七个小时，雨季容易塌方。中间要从宁蒗县城经过，客车可能会停。路途中间颠簸，晕车的乘车应该注意下。                               '],
+                     ['0',
+                      '丽江到泸沽湖的路不是很好。到女神湾的路很好，如果是轿车的话就没问题，但大客车进不了女神湾，那边的住宿还可以，环境好，还便宜                               '],
+                     ['2',
+                      '山路，路况还行，不过有些地方有地危险，我相信司机的技术                               '],
+                     ['1', '山路，路况还行                               '],
+                     ['0', '泸沽湖                               ']],
+          'detail': '从丽江到女神湾的吃住行问题。',
+          'lables': ['巴士', '泸沽湖', '丽江', '交通', '住宿', '住哪儿好', '丽江往返', '女神湾'],
+          'location': '泸沽湖',
+          'title': '丽江到泸沽湖的公路状况如何？到女神湾的路好走吗？在女神湾好住宿吗？大客车能进女神湾吗？希望行家介绍一下。'}}
+2017-08-22 18:14:56 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000225.html> (referer: http://www.mafengwo.cn/wenda/detail-1000224.html)
+2017-08-22 18:15:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000226.html> (referer: http://www.mafengwo.cn/wenda/detail-1000225.html)
+2017-08-22 18:15:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000227.html> (referer: http://www.mafengwo.cn/wenda/detail-1000226.html)
+2017-08-22 18:15:03 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000227.html>
+{'data': {'_id': ObjectId('599c04275e5cca39d1899919'),
+          'answer': [['1',
+                      '从沙巴亚庇机场到吉隆坡国际机场每天有大约20个航班，有两个公司运营这条航线，分别是马来西亚航空和亚航，飞行时间2小时30分左右，最早的航班早6:05，最晚的21:25。单程票价和人民币500元左右。LCCT(Low '
+                      'Cost Carrier '
+                      'Terminal)是吉隆坡国际机场的一个航楼，05年开始使用，主要服务廉价航空。亚航的所有航班都在LCCT航楼。马来西亚航空在主航楼。                               '],
+                     ['0',
+                      '从西马到东马，相当于二次入境，如果你办理签证，需要多次的，一次的不行                               '],
+                     ['0',
+                      '婆罗州是属于半自治的州。从吉隆坡到沙巴的手续是和入关一样的。                               '],
+                     ['0',
+                      '是LCCT机场吗 因为他那就一个转机厅 '
+                      '所以都成了国际                               '],
+                     ['0',
+                      '怎么会在国际那部分呢？我在亚庇2个机场没发现这个诶？                               '],
+                     ['0', '差不多吧，沙巴和砂拉越是特别行政区                               '],
+                     ['0', '同一个入口,机场很小的.                               '],
+                     ['0', '因为他那就一个转机厅                               '],
+                     ['0', '因为是自治州                               ']],
+          'detail': '如题！难道是类似我从国内去香港一样的意思吗？',
+          'lables': ['飞机', '吉隆坡', '亚庇', '交通'],
+          'location': '亚庇',
+          'title': '亚庇飞吉隆坡在国际出发那个部分？为什么呢？'}}
+2017-08-22 18:15:07 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000228.html> (referer: http://www.mafengwo.cn/wenda/detail-1000227.html)
+2017-08-22 18:15:11 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000229.html> (referer: http://www.mafengwo.cn/wenda/detail-1000228.html)
+2017-08-22 18:15:15 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000230.html> (referer: http://www.mafengwo.cn/wenda/detail-1000229.html)
+2017-08-22 18:15:22 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000231.html> (referer: http://www.mafengwo.cn/wenda/detail-1000230.html)
+2017-08-22 18:15:24 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000232.html> (referer: http://www.mafengwo.cn/wenda/detail-1000231.html)
+2017-08-22 18:15:25 [scrapy.extensions.logstats] INFO: Crawled 159 pages (at 16 pages/min), scraped 10 items (at 2 items/min)
+2017-08-22 18:15:28 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000233.html> (referer: http://www.mafengwo.cn/wenda/detail-1000232.html)
+2017-08-22 18:15:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000234.html> (referer: http://www.mafengwo.cn/wenda/detail-1000233.html)
+2017-08-22 18:15:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000235.html> (referer: http://www.mafengwo.cn/wenda/detail-1000234.html)
+2017-08-22 18:15:39 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000236.html> (referer: http://www.mafengwo.cn/wenda/detail-1000235.html)
+2017-08-22 18:15:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000237.html> (referer: http://www.mafengwo.cn/wenda/detail-1000236.html)
+2017-08-22 18:15:45 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000238.html> (referer: http://www.mafengwo.cn/wenda/detail-1000237.html)
+2017-08-22 18:15:47 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000239.html> (referer: http://www.mafengwo.cn/wenda/detail-1000238.html)
+2017-08-22 18:15:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000240.html> (referer: http://www.mafengwo.cn/wenda/detail-1000239.html)
+2017-08-22 18:15:54 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000241.html> (referer: http://www.mafengwo.cn/wenda/detail-1000240.html)
+2017-08-22 18:16:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000242.html> (referer: http://www.mafengwo.cn/wenda/detail-1000241.html)
+2017-08-22 18:16:03 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000243.html> (referer: http://www.mafengwo.cn/wenda/detail-1000242.html)
+2017-08-22 18:16:07 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000244.html> (referer: http://www.mafengwo.cn/wenda/detail-1000243.html)
+2017-08-22 18:16:11 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000245.html> (referer: http://www.mafengwo.cn/wenda/detail-1000244.html)
+2017-08-22 18:16:19 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000246.html> (referer: http://www.mafengwo.cn/wenda/detail-1000245.html)
+2017-08-22 18:16:20 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000247.html> (referer: http://www.mafengwo.cn/wenda/detail-1000246.html)
+2017-08-22 18:16:23 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000248.html> (referer: http://www.mafengwo.cn/wenda/detail-1000247.html)
+2017-08-22 18:16:25 [scrapy.extensions.logstats] INFO: Crawled 175 pages (at 16 pages/min), scraped 10 items (at 0 items/min)
+2017-08-22 18:16:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000249.html> (referer: http://www.mafengwo.cn/wenda/detail-1000248.html)
+2017-08-22 18:16:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000250.html> (referer: http://www.mafengwo.cn/wenda/detail-1000249.html)
+2017-08-22 18:16:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000251.html> (referer: http://www.mafengwo.cn/wenda/detail-1000250.html)
+2017-08-22 18:16:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000252.html> (referer: http://www.mafengwo.cn/wenda/detail-1000251.html)
+2017-08-22 18:16:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000253.html> (referer: http://www.mafengwo.cn/wenda/detail-1000252.html)
+2017-08-22 18:16:47 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000254.html> (referer: http://www.mafengwo.cn/wenda/detail-1000253.html)
+2017-08-22 18:16:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000255.html> (referer: http://www.mafengwo.cn/wenda/detail-1000254.html)
+2017-08-22 18:16:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000255.html>
+{'data': {'_id': ObjectId('599c04955e5cca39d189991b'),
+          'answer': [['2',
+                      '我之前也有过你这样的纠结，所以也算是过来人了，刚开始入手的是入门级单反，但是用了一段时间后觉得还是中端的才是以后要选择的方向，所以立马换了中端的，半幅的我觉得对于旅行来说已经够了，全幅好是好，但是有点浪费了，毕竟不是干摄影行业的，可以多入手个广角的镜头。                               '],
+                     ['1',
+                      '穷人一步到位，富人慢慢升级……要么买入门级比如600D，要么买全画幅6D，反正60D贵的那一千块是完全不值的不要买套机，买个带大光圈的镜头，不然夜景、阴天拍不到你会很遗憾如果拍人为主就不要买长焦了，24-50这个焦段内比较合适，不要超过80，因为一起出去玩你不可能跑到几十米开外给大家拍照                               '],
+                     ['0',
+                      '直接给你最合适的配置吧：尼康D610+28-300，真正做到一机走天下，目前价格只有不到16k。基本上属于全画幅单反入门足够用了。很多人都是单反从APS然后再更新到全画幅，机身要采购不说，镜头呀全部要更新，不值得，还是跟上主流的步伐吧，祝你旅途愉快，拍出自己心仪的片子！                               '],
+                     ['0',
+                      '我是尼D90、玩了三年、备升全副、半副尼D90当备机、二手买家当你破烂、其实尼D90是很不错中高挡机、以后买长焦乘15更长焦、广角玩全副、有米就吃、否则死了不吃米、年轻亡、老婆、孩子也是别人的、我一生最看不起平时节约省食存钱、可怜钱存不少、人死了、走时只带两把指甲、惨呀！                               '],
+                     ['0',
+                      '比较推荐佳能6D，全画幅，属于偏中端的，套机是24-105的镜头，不是发烧一族的应该够用了。我在用这个，效果各方面都觉得很不错。。还带wifi功能，拍的照片可以直接传到手机上，这点我也很喜欢。楼主可以了解一下咯~                               '],
+                     ['0',
+                      '自己年底入了尼康的D5200,反正挺满意的觉得够用了，片子拍的好不好主要还是看技术吧，或者你可以买个中档的机子以后换镜头就好了。                               '],
+                     ['0',
+                      '单反这个东西。。要看你个人需求。。机身只是基础。。照片好不好最终还是看拍的人。。看米吃饭。。负担得起就ok                               '],
+                     ['0',
+                      '还是看预算吧！预算多可以一步到位。如果只是玩玩，没有深入研究计划，那入门或中端机子就够用了                               '],
+                     ['0',
+                      '这个可以去单反贴吧问问。相机这个东西也看个人需求，看你需要拍什么照片。风景，人物，小品。                               '],
+                     ['1',
+                      '如果是不差钱的话就直接上全幅吧，反正我之前的半幅就被打入冷宫了………                               '],
+                     ['1',
+                      '能一步到位必须一步到位 。摄影产品 方向对了 '
+                      '前期投入越大越省钱、                               '],
+                     ['0',
+                      '不是发烧友，就买个入门级就好了，不过照你的描述，你用久了依然像要升级的。                               '],
+                     ['0',
+                      '早晚都要升级，不如一步到位。而且全副和半副，毕竟是有质的区别啊                               '],
+                     ['0',
+                      '看你主要要拍什么。。看你的样子 中档机吧 '
+                      '镜头可以好点                               '],
+                     ['0',
+                      '如果楼主是摄影发烧友，又不差钱，那就一步到位吧                               ']],
+          'detail': '首先申明下我不是单反发烧友，我只是喜欢摄影，想有一部自己够用的单反，以前用了四年的卡片机（松下LX3），里面也有些简单的P、a、s档位的拍摄模式，但是用久了总感觉很多东西拍不出自己想要的效果，就让我有了想换单反的恋头，现在忧郁的是不知道是买个性价比高的半画幅单反，还是向网上有人推荐的一步到位直接全画幅，想请用过的蜂友给分析分析。',
+          'lables': ['装备', '其他', '单反相机', '摄影'],
+          'location': '中国',
+          'title': '想买个单反去旅行，半副的够用吗？怕以后又想换全副的，是否需要一步到位？请蜂友们帮我分析分析。'}}
+2017-08-22 18:16:55 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000256.html> (referer: http://www.mafengwo.cn/wenda/detail-1000255.html)
+2017-08-22 18:16:59 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000257.html> (referer: http://www.mafengwo.cn/wenda/detail-1000256.html)
+2017-08-22 18:17:03 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000258.html> (referer: http://www.mafengwo.cn/wenda/detail-1000257.html)
+2017-08-22 18:17:06 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000259.html> (referer: http://www.mafengwo.cn/wenda/detail-1000258.html)
+2017-08-22 18:17:10 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000260.html> (referer: http://www.mafengwo.cn/wenda/detail-1000259.html)
+2017-08-22 18:17:16 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000261.html> (referer: http://www.mafengwo.cn/wenda/detail-1000260.html)
+2017-08-22 18:17:18 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000262.html> (referer: http://www.mafengwo.cn/wenda/detail-1000261.html)
+2017-08-22 18:17:23 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000263.html> (referer: http://www.mafengwo.cn/wenda/detail-1000262.html)
+2017-08-22 18:17:25 [scrapy.extensions.logstats] INFO: Crawled 190 pages (at 15 pages/min), scraped 11 items (at 1 items/min)
+2017-08-22 18:17:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000264.html> (referer: http://www.mafengwo.cn/wenda/detail-1000263.html)
+2017-08-22 18:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000265.html> (referer: http://www.mafengwo.cn/wenda/detail-1000264.html)
+2017-08-22 18:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000265.html>
+{'data': {'_id': ObjectId('599c04bd5e5cca39d189991d'),
+          'answer': [['18',
+                      '中国移动用户，不开通国际漫游，到了韩国也可以使用免费无线WIFI的，这点不用担心，如果你心里不拖地的话，给你支个招，可以开通你的国际漫游，然后到了韩国，关闭你的3G功能，此时你的国际漫游等于已经关闭，如果不打电话和短信的话，回国时不发生费用的。在使用微信和短信、上网时候，可以租一个egg,也可以找免费的WIFI,注意使用时候选用WFI模式。韩国餐厅、酒店、商场大都提供免费WIFI的，所以通常情况下，你不用漫游流量的。我今年4月中旬刚从首尔回来。                               '],
+                     ['21',
+                      '你可以从机场租一个EGG，但是如果使用银联卡支付，要提前预约哦~不然就不会租给你的。visa卡支付的话，直接租就可以。给你一个egg租赁的网址：http://www.hanyouwang.com/a/special/kt_egg/如果你手机支持wifi功能的话，不管什么网络都可以使用无线网络。不过首尔的网络没有大家说的那么流畅神奇。别抱有太多幻想。还是组个EGG，比较靠谱。随时随地都可以上网，而且地铁里面也有信号                               '],
+                     ['4',
+                      '其实你可以开通国际漫游，上海只要手机余额有200就可以免费开通国际漫游了，而且在首尔当地打电话和发短信也不贵，我记得打电话是1元还是1.9元/分钟，应急用还是挺方便的。WIFI的话，其实首尔还是非常方便的，热点很多，基本吃饭的地方和咖啡店都有免费的WIFI~~~你累了就上咖啡店坐会儿，喝杯咖啡上个网，还是非常方便的。大型商场里也有免费WIFI，之前我去的时候就没有租egg。关于手机，不知道你是水货还是什么，那边貌似是3G网络，如果你是移动的定制去那边不一定能漫游，最好提前问一下移动客服，她们会告诉你这个手机能否在韩国使用的                               '],
+                     ['17',
+                      '【去韩国旅游！我是否真的需要租赁wifi？】答案：如果您不经常上网，那您不必租，如果您是手机控，我还是建议您租一台，有了它走到哪都能轻松上网【韩国到处是免费wifi吗？】答案：这个是有误区的，如果真的到处都是无线wifi，那大家就都没有必要开通上网功能了，如果您想避免到处搜网络，上网断断续续的烦恼，韩游网小编还是建议您租用wifi '
+                      'egg！                               '],
+                     ['1',
+                      '中国移动，不开通国际漫游，在韩国首尔是能连上酒店或者商场的免费的wifi的，一些大的酒店商场都是有的，但是不是每个商场酒店都有免费的WiFi的。如果你想用手机打电话或者发短信的话，是必须开通国际漫游的，或者租一个韩国的手机也是可以的~~如果你对首尔不是怎么熟悉的话，建议你还是租一个随身wifi '
+                      'egg比较好，在没有免费的wifi的时候，又想上网的感觉你是懂得~~租个egg可以几个人一起使用，还是挺方便的，及时的联系朋友，查个地图什么的都行~~~费用也不是很贵，好像是一天30多块钱吧，可以上网上查查~~                               '],
+                     ['6',
+                      '建议带着自己国内的手机，直接来韩国买个这边的手机卡插上用，省事还便宜。就不用又得开漫游，又得租egg了。只要你手机是支持WCDMA制式的解锁手机就行，在国内能使用联通卡的手机就行。我去韩国的时候就在仁川机场 '
+                      '1楼入境大厅旁边的7-11便利店里买的手机卡，叫“KT '
+                      'Mmobile预付SIM卡”，真的很方便。                               '],
+                     ['0',
+                      '如果只是WIFI的问题，你在走之前或到机场的时候租个韩国的随身wifi- '
+                      'EGG。它体积小，可以连续用6个小时左右，TB上租大概18元/天，也有租，有些店家可能要押金有些不需要，你可以自己选择下。                               '],
+                     ['2',
+                      '只是上网的话，没问题啊其实开通漫游也不贵，我是联通手机，接打都是0.96每分钟，短信是0.36。有些时候不是网络能搞定的，几次出租车司机不知道酒店地址，我都是打电话给酒店。                               '],
+                     ['0',
+                      '国际漫游是针对打电话发短信这些通信讯号而言的，WiFi的话只要是有这一功能的设备都可以连接免费WiFi啊，你想想iPad、电脑都不能打电话但是哪儿的WiFi都可以连接呀。                               '],
+                     ['0',
+                      '当然可以啊，WIFI和国际漫游不冲突啊WIFI在手机没有信号状态下也可以啊当然，没有国际漫游和EGG的话，手机和砖头没啥区别的免费WIFI没想象的那么多                               '],
+                     ['1',
+                      '0.0不开国际漫游，可以用WIFI。建议下一个可打网络电话的软件，如“有信”“LINE”等，在连接WIFI的条件下打电话不要钱                               '],
+                     ['0',
+                      '建议你租个egg，虽说到处都有wifi，但很多都需要密码不是想上就能上的，除了酒店或者大点的餐厅商场以外，其他地方还是不太容易随时上                               '],
+                     ['0',
+                      '可以啊。你一直开飞行模式都可以连接wifi的。不过首尔的免费wifi真心没有普及...所谓的全城铺盖网络都是针对有当地手机卡的人。                               '],
+                     ['1',
+                      '可以连的，地铁上也有免费Wi-Fi，如果你都是在明洞范围内就不用担心网络，如果去其它地方玩，最好在机场租个Wi-Fi                               '],
+                     ['0',
+                      '完全可以用，我当时就没租啊，因为玩的时候看手机也不多。如果想发微博啥的，就找个饭店，他们有时地铁里有免费WiFi，有的店里也有                               ']],
+          'detail': '中国移动，不开通国际漫游，在韩国首尔能连上酒店或者商场的免费 wifi吗？主要想在韩国用网络，请求指点~~',
+          'lables': ['通讯', '酒店', '韩国', 'WiFi通讯', '中国', '移动wifi'],
+          'location': '首尔',
+          'title': '中国移动，不开通国际漫游，在韩国首尔能连上酒店或者商场的免费 wifi吗？'}}
+2017-08-22 18:17:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000266.html> (referer: http://www.mafengwo.cn/wenda/detail-1000265.html)
+2017-08-22 18:17:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000267.html> (referer: http://www.mafengwo.cn/wenda/detail-1000266.html)
+2017-08-22 18:17:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000268.html> (referer: http://www.mafengwo.cn/wenda/detail-1000267.html)
+2017-08-22 18:17:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000269.html> (referer: http://www.mafengwo.cn/wenda/detail-1000268.html)
+2017-08-22 18:17:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000269.html>
+{'data': {'_id': ObjectId('599c04cb5e5cca39d189991f'),
+          'answer': [['3',
+                      '1.考虑从吉隆坡转机去悉尼的路线，关注亚航，不时会有廉价的机票的2.签证可以直接在淘宝上找3.准备的时候，淘宝上搜下澳大利亚签证，一般都会有相近的说明                               '],
+                     ['1',
+                      '越南航空，广州经吉隆坡飞悉尼的航班，含税费总价不超过1900元。我随便查了9月11日的航班，不知道你具体的出行日期，呵呵。祝你旅途愉快！                               '],
+                     ['0',
+                      '可以广州-吉隆坡-悉尼，亚航。香港-吉隆坡-悉尼，亚航。香港-新加坡-悉尼，酷航。香港-新加坡-悉尼，捷星。选择还是很多的，希望对你有帮助。                               '],
+                     ['1',
+                      '查了一下现在的机票越南航空最便宜 加税才不到三千 单程啊你什么时候去呢 '
+                      '这个跟时间有很大关系                               '],
+                     ['0',
+                      '品质航空等机票，如果你有需要，可以稳我帮你睇下咯，我边有机票订。QQ1063822919                               '],
+                     ['0',
+                      '买压航从吉隆坡专机或从新加坡转机应该是最便宜的了。                               '],
+                     ['0', '这个去哪 儿应该能查的                               '],
+                     ['1', '亚航 酷航                               '],
+                     ['0', '亚航 酷航                               ']],
+          'detail': '怎么能买到去的廉价机票啊~我从广州出发~如果有需要的话 我可以去hk坐飞机~请大家给点建议~~',
+          'lables': ['飞机', '广州', '悉尼', '机票', '交通'],
+          'location': '悉尼',
+          'title': '怎么能买到去悉尼的廉价机票啊~我从广州出发~如果有需要的话 我可以去hk坐飞机~请大家给点建议~~'}}
+2017-08-22 18:17:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000270.html> (referer: http://www.mafengwo.cn/wenda/detail-1000269.html)
+2017-08-22 18:17:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000270.html>
+{'data': {'_id': ObjectId('599c04cf5e5cca39d1899921'),
+          'answer': [['0',
+                      '普吉岛梦幻海岛3日游普吉岛线路特色：领略普吉岛的精华所在，尽享普岛浮潜、美食及购物乐趣。线路设计：D1：攀牙湾→幻多奇乐园D2：皇帝岛→芭东海滩D3：普吉镇→Central '
+                      'Festival线路详情：D1：攀牙湾→幻多奇乐园参加攀牙湾一日游，可以自由选择一天2-6项游览内容，包括探访007岛、水上渔村、独木舟探险、皮划艇、骑大象、看猴子等，旅行社负责到酒店接送。傍晚回到卡伦海滩，略作休息，换身漂漂亮亮的衣服，去幻多奇剧场欣赏精彩纷呈的表演。幻多奇娱乐城被称为泰国的迪士尼，不但能看演出，还能品尝到各种泰国美食，买到特色手工艺品。考虑到老人孩子需要比较安静的环境，建议三天住宿都安排在卡伦海滩。D2：皇帝岛→芭东海滩皇帝岛是普吉岛的精华，可快艇到皇帝岛。皇帝岛岛是浮潜的好地方，可以安排1-2次浮潜，观看精彩的海洋生物。也可以经简单的培训，带有可供压缩空气的头罩下到海底漫步了。傍晚来到芭东海滩（乘坐班车10分钟可到）享受一顿丰盛的海鲜晚餐，然后去芭东夜市或著名的酒吧一条街逛逛。D3：普吉镇→Central '
+                      'Festival坐班车或TuTu车去普及镇，镇上的游客不及海边那么多，但走一趟老城区，坐一下当地的茶餐厅，质朴的人文风情会给你留下深刻的印象。包括甲米路（Krabi '
+                      'Road）、泰朗路（Thalang Road）和迪布街（Dibuk '
+                      'Road）都是值得一逛的老街。在镇上的传统餐厅用过午饭后搭前往芭东海滩的班车，到Central '
+                      'Festival下车，这里集中了普吉最大最完善的购物中心，包括像BigC这样的大卖场。傍晚左右回到驻地卡隆海滩。可以休息一会或者下海游一会泳。晚上不妨驱车几公里到岛内山顶上的餐馆就餐，一边享受美食一边欣赏美丽的海边落日。                               '],
+                     ['0',
+                      '第一天午餐后，下午可以去骑大象，漂流，或者看幻多奇。第二天一早出发，参加外岛的一日游，在外岛住一晚，第三天下午回本岛。第三天下午回到酒店，晚上看人妖秀或者逛街。第四天租个摩托，在本岛其他海滩或者去普集镇转转，6点晚餐后，去机场。其实普吉本岛没什么好玩的，除非你喜欢泡酒吧或者逛街。建议去外岛住一晚。PP岛国内最出名，中国人也就最多，旁边的几个小岛风景不错。皇帝岛欧美人居多，风景也不错。甲米、柴达 '
+                      '开发较晚，几乎都是欧美人，风景个人感觉在前面2个岛之上。斯米兰群岛，风景堪比马尔代夫，每年只开放到4月底就关闭了，路途较远，住宿较贵。因为你时间较短，所以只能选其一。2、岛上按摩店很多，便宜实惠。较好的有柚木宫和SUKKO '
+                      'SPA（号称亚洲第一，哈哈），价格一般在600元人民币左右吧。希望对你有帮助，                               '],
+                     ['0',
+                      '我在普吉玩了6天，你可以参考一下我的游记，。第一天上午在海边散步，下午租车去神仙半岛看日落。第二天去达柴岛，洁净到无法形容，需要在国内淘宝提前预定，在岛上要提前两天订，你到了就来不及啦。第三天睡到自然醒，然后去普吉镇买点旅游纪念品，享受一下酒店的泳池。                               '],
+                     ['2',
+                      '行程：Day1：普吉岛泰国画廊&gt;定光堂&gt;韧妲神奇艺术&gt;嘉久见餐厅&gt;陶博景神社Day2：普吉岛木卡拉姆邦涛清真寺&gt;库多斯餐厅及酒吧&gt;Chadasai '
+                      'spa&gt;暹罗晚餐俱乐部&gt;普吉幻多奇主题乐园Day3：普吉岛敖萨海滩&gt;含雅诺海滩&gt;神仙半岛                               '],
+                     ['0',
+                      '普吉可以玩乐游也可以度假游，看你喜欢哪种了。我1月刚去普吉回来，你可以看看我的游记，还是蛮详细的，正在更新中，                               '],
+                     ['0',
+                      'D1：攀牙湾一日游：007岛、骑大象等，看最晚一场的人妖秀；D2：租个摩托车环岛游：芭东-普集镇-查龙寺-神仙半岛-卡伦、卡塔海滩-江西冷；D3：皇帝岛+珊瑚岛的一日游。                               '],
+                     ['0',
+                      '3天~~~~   2天普吉岛 + 1天PP岛~~       一定要去离岛玩的 不然白来普吉了   '
+                      '亲加QQ1621077069  给你一套行程  '
+                      '您自选                               '],
+                     ['0',
+                      '选一天 报个一日有到周边的岛去玩一下 据说皇帝岛不错另外两天就在普吉岛上晒晒太阳 吃吃海鲜 '
+                      '浮浅玩一下吧                               '],
+                     ['0',
+                      'D1：普吉--pp岛--骑大象、割橡胶、坐牛车、猴子表演D2：普吉--加勒谷岛D3：普吉--人妖表演                               '],
+                     ['0',
+                      'D1：攀牙湾→幻多奇乐园D2：皇帝岛→芭东海滩D3：普吉镇→Central '
+                      'Festival                               '],
+                     ['0', '看看吧，14天。你挑三天                               '],
+                     ['0',
+                      '1.去大象营和海龙寺，2.攀牙湾国家公园与007岛与割喉群岛，3.PP深潜                               '],
+                     ['0',
+                      '在一天普吉岛逛逛，然后就是周边跳岛耍耍啊，那么多的海岛可以选择。                               '],
+                     ['0', '普吉岛一地：潜水、游船、晒太阳                               '],
+                     ['0', '想怎么玩就怎么玩   哈哈哈                               ']],
+          'detail': '不想太累',
+          'lables': ['普吉岛'],
+          'location': '普吉岛',
+          'title': '三天时间普吉岛要怎么玩？'}}
+2017-08-22 18:17:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000271.html> (referer: http://www.mafengwo.cn/wenda/detail-1000270.html)
+2017-08-22 18:17:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000272.html> (referer: http://www.mafengwo.cn/wenda/detail-1000271.html)
+2017-08-22 18:18:02 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000273.html> (referer: http://www.mafengwo.cn/wenda/detail-1000272.html)
+2017-08-22 18:18:07 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000274.html> (referer: http://www.mafengwo.cn/wenda/detail-1000273.html)
+2017-08-22 18:18:10 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000275.html> (referer: http://www.mafengwo.cn/wenda/detail-1000274.html)
+2017-08-22 18:18:14 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000276.html> (referer: http://www.mafengwo.cn/wenda/detail-1000275.html)
+2017-08-22 18:18:16 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000277.html> (referer: http://www.mafengwo.cn/wenda/detail-1000276.html)
+2017-08-22 18:18:20 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000278.html> (referer: http://www.mafengwo.cn/wenda/detail-1000277.html)
+2017-08-22 18:18:25 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000279.html> (referer: http://www.mafengwo.cn/wenda/detail-1000278.html)
+2017-08-22 18:18:25 [scrapy.extensions.logstats] INFO: Crawled 206 pages (at 16 pages/min), scraped 14 items (at 3 items/min)
+2017-08-22 18:18:29 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000280.html> (referer: http://www.mafengwo.cn/wenda/detail-1000279.html)
+2017-08-22 18:18:33 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000281.html> (referer: http://www.mafengwo.cn/wenda/detail-1000280.html)
+2017-08-22 18:18:37 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000282.html> (referer: http://www.mafengwo.cn/wenda/detail-1000281.html)
+2017-08-22 18:18:40 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000283.html> (referer: http://www.mafengwo.cn/wenda/detail-1000282.html)
+2017-08-22 18:18:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000284.html> (referer: http://www.mafengwo.cn/wenda/detail-1000283.html)
+2017-08-22 18:18:47 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000285.html> (referer: http://www.mafengwo.cn/wenda/detail-1000284.html)
+2017-08-22 18:18:50 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000286.html> (referer: http://www.mafengwo.cn/wenda/detail-1000285.html)
+2017-08-22 18:18:54 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000287.html> (referer: http://www.mafengwo.cn/wenda/detail-1000286.html)
+2017-08-22 18:18:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000288.html> (referer: http://www.mafengwo.cn/wenda/detail-1000287.html)
+2017-08-22 18:19:02 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000289.html> (referer: http://www.mafengwo.cn/wenda/detail-1000288.html)
+2017-08-22 18:19:06 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000290.html> (referer: http://www.mafengwo.cn/wenda/detail-1000289.html)
+2017-08-22 18:19:11 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000291.html> (referer: http://www.mafengwo.cn/wenda/detail-1000290.html)
+2017-08-22 18:19:13 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000292.html> (referer: http://www.mafengwo.cn/wenda/detail-1000291.html)
+2017-08-22 18:19:20 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000293.html> (referer: http://www.mafengwo.cn/wenda/detail-1000292.html)
+2017-08-22 18:19:21 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000294.html> (referer: http://www.mafengwo.cn/wenda/detail-1000293.html)
+2017-08-22 18:19:25 [scrapy.extensions.logstats] INFO: Crawled 221 pages (at 15 pages/min), scraped 14 items (at 0 items/min)
+2017-08-22 18:19:25 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000295.html> (referer: http://www.mafengwo.cn/wenda/detail-1000294.html)
+2017-08-22 18:19:30 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000296.html> (referer: http://www.mafengwo.cn/wenda/detail-1000295.html)
+2017-08-22 18:19:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000297.html> (referer: http://www.mafengwo.cn/wenda/detail-1000296.html)
+2017-08-22 18:19:37 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000298.html> (referer: http://www.mafengwo.cn/wenda/detail-1000297.html)
+2017-08-22 18:19:41 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000299.html> (referer: http://www.mafengwo.cn/wenda/detail-1000298.html)
+2017-08-22 18:19:44 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000300.html> (referer: http://www.mafengwo.cn/wenda/detail-1000299.html)
+2017-08-22 18:19:49 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000301.html> (referer: http://www.mafengwo.cn/wenda/detail-1000300.html)
+2017-08-22 18:19:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000302.html> (referer: http://www.mafengwo.cn/wenda/detail-1000301.html)
+2017-08-22 18:19:57 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000303.html> (referer: http://www.mafengwo.cn/wenda/detail-1000302.html)
+2017-08-22 18:20:03 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000304.html> (referer: http://www.mafengwo.cn/wenda/detail-1000303.html)
+2017-08-22 18:20:05 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000305.html> (referer: http://www.mafengwo.cn/wenda/detail-1000304.html)
+2017-08-22 18:20:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000306.html> (referer: http://www.mafengwo.cn/wenda/detail-1000305.html)
+2017-08-22 18:20:25 [scrapy.extensions.logstats] INFO: Crawled 233 pages (at 12 pages/min), scraped 14 items (at 0 items/min)
+2017-08-22 18:20:26 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000307.html> (referer: http://www.mafengwo.cn/wenda/detail-1000306.html)
+2017-08-22 18:20:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000308.html> (referer: http://www.mafengwo.cn/wenda/detail-1000307.html)
+2017-08-22 18:20:39 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000309.html> (referer: http://www.mafengwo.cn/wenda/detail-1000308.html)
+2017-08-22 18:20:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000310.html> (referer: http://www.mafengwo.cn/wenda/detail-1000309.html)
+2017-08-22 18:20:45 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000311.html> (referer: http://www.mafengwo.cn/wenda/detail-1000310.html)
+2017-08-22 18:20:49 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000312.html> (referer: http://www.mafengwo.cn/wenda/detail-1000311.html)
+2017-08-22 18:20:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000313.html> (referer: http://www.mafengwo.cn/wenda/detail-1000312.html)
+2017-08-22 18:20:57 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000314.html> (referer: http://www.mafengwo.cn/wenda/detail-1000313.html)
+2017-08-22 18:21:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000315.html> (referer: http://www.mafengwo.cn/wenda/detail-1000314.html)
+2017-08-22 18:21:05 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000316.html> (referer: http://www.mafengwo.cn/wenda/detail-1000315.html)
+2017-08-22 18:21:10 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000317.html> (referer: http://www.mafengwo.cn/wenda/detail-1000316.html)
+2017-08-22 18:21:11 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000318.html> (referer: http://www.mafengwo.cn/wenda/detail-1000317.html)
+2017-08-22 18:21:19 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000319.html> (referer: http://www.mafengwo.cn/wenda/detail-1000318.html)
+2017-08-22 18:21:23 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000320.html> (referer: http://www.mafengwo.cn/wenda/detail-1000319.html)
+2017-08-22 18:21:25 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000321.html> (referer: http://www.mafengwo.cn/wenda/detail-1000320.html)
+2017-08-22 18:21:25 [scrapy.extensions.logstats] INFO: Crawled 248 pages (at 15 pages/min), scraped 14 items (at 0 items/min)
+2017-08-22 18:21:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000322.html> (referer: http://www.mafengwo.cn/wenda/detail-1000321.html)
+2017-08-22 18:21:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000323.html> (referer: http://www.mafengwo.cn/wenda/detail-1000322.html)
+2017-08-22 18:21:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000324.html> (referer: http://www.mafengwo.cn/wenda/detail-1000323.html)
+2017-08-22 18:21:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000325.html> (referer: http://www.mafengwo.cn/wenda/detail-1000324.html)
+2017-08-22 18:21:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000326.html> (referer: http://www.mafengwo.cn/wenda/detail-1000325.html)
+2017-08-22 18:21:48 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000327.html> (referer: http://www.mafengwo.cn/wenda/detail-1000326.html)
+2017-08-22 18:21:49 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000328.html> (referer: http://www.mafengwo.cn/wenda/detail-1000327.html)
+2017-08-22 18:21:54 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000329.html> (referer: http://www.mafengwo.cn/wenda/detail-1000328.html)
+2017-08-22 18:21:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000330.html> (referer: http://www.mafengwo.cn/wenda/detail-1000329.html)
+2017-08-22 18:22:02 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000331.html> (referer: http://www.mafengwo.cn/wenda/detail-1000330.html)
+2017-08-22 18:22:06 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000332.html> (referer: http://www.mafengwo.cn/wenda/detail-1000331.html)
+2017-08-22 18:22:10 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000333.html> (referer: http://www.mafengwo.cn/wenda/detail-1000332.html)
+2017-08-22 18:22:25 [scrapy.extensions.logstats] INFO: Crawled 260 pages (at 12 pages/min), scraped 14 items (at 0 items/min)
+2017-08-22 18:22:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000334.html> (referer: http://www.mafengwo.cn/wenda/detail-1000333.html)
+2017-08-22 18:22:37 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000335.html> (referer: http://www.mafengwo.cn/wenda/detail-1000334.html)
+2017-08-22 18:22:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000336.html> (referer: http://www.mafengwo.cn/wenda/detail-1000335.html)
+2017-08-22 18:22:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000337.html> (referer: http://www.mafengwo.cn/wenda/detail-1000336.html)
+2017-08-22 18:22:47 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000338.html> (referer: http://www.mafengwo.cn/wenda/detail-1000337.html)
+2017-08-22 18:22:52 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000339.html> (referer: http://www.mafengwo.cn/wenda/detail-1000338.html)
+2017-08-22 18:22:56 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000340.html> (referer: http://www.mafengwo.cn/wenda/detail-1000339.html)
+2017-08-22 18:22:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000341.html> (referer: http://www.mafengwo.cn/wenda/detail-1000340.html)
+2017-08-22 18:23:03 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000342.html> (referer: http://www.mafengwo.cn/wenda/detail-1000341.html)
+2017-08-22 18:23:09 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000343.html> (referer: http://www.mafengwo.cn/wenda/detail-1000342.html)
+2017-08-22 18:23:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000344.html> (referer: http://www.mafengwo.cn/wenda/detail-1000343.html)
+2017-08-22 18:23:15 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000345.html> (referer: http://www.mafengwo.cn/wenda/detail-1000344.html)
+2017-08-22 18:23:25 [scrapy.extensions.logstats] INFO: Crawled 272 pages (at 12 pages/min), scraped 14 items (at 0 items/min)
+2017-08-22 18:23:31 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000346.html> (referer: http://www.mafengwo.cn/wenda/detail-1000345.html)
+2017-08-22 18:23:33 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000347.html> (referer: http://www.mafengwo.cn/wenda/detail-1000346.html)
+2017-08-22 18:23:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000348.html> (referer: http://www.mafengwo.cn/wenda/detail-1000347.html)
+2017-08-22 18:23:40 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000349.html> (referer: http://www.mafengwo.cn/wenda/detail-1000348.html)
+2017-08-22 18:23:46 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000350.html> (referer: http://www.mafengwo.cn/wenda/detail-1000349.html)
+2017-08-22 18:23:51 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000351.html> (referer: http://www.mafengwo.cn/wenda/detail-1000350.html)
+2017-08-22 18:23:52 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000352.html> (referer: http://www.mafengwo.cn/wenda/detail-1000351.html)
+2017-08-22 18:23:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000353.html> (referer: http://www.mafengwo.cn/wenda/detail-1000352.html)
+2017-08-22 18:24:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000354.html> (referer: http://www.mafengwo.cn/wenda/detail-1000353.html)
+2017-08-22 18:24:04 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000355.html> (referer: http://www.mafengwo.cn/wenda/detail-1000354.html)
+2017-08-22 18:24:06 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000356.html> (referer: http://www.mafengwo.cn/wenda/detail-1000355.html)
+2017-08-22 18:24:09 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000357.html> (referer: http://www.mafengwo.cn/wenda/detail-1000356.html)
+2017-08-22 18:24:13 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000358.html> (referer: http://www.mafengwo.cn/wenda/detail-1000357.html)
+2017-08-22 18:24:23 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000359.html> (referer: http://www.mafengwo.cn/wenda/detail-1000358.html)
+2017-08-22 18:24:24 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000360.html> (referer: http://www.mafengwo.cn/wenda/detail-1000359.html)
+2017-08-22 18:24:25 [scrapy.extensions.logstats] INFO: Crawled 287 pages (at 15 pages/min), scraped 14 items (at 0 items/min)
+2017-08-22 18:24:26 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000361.html> (referer: http://www.mafengwo.cn/wenda/detail-1000360.html)
+2017-08-22 18:24:31 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000362.html> (referer: http://www.mafengwo.cn/wenda/detail-1000361.html)
+2017-08-22 18:24:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000363.html> (referer: http://www.mafengwo.cn/wenda/detail-1000362.html)
+2017-08-22 18:24:38 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000364.html> (referer: http://www.mafengwo.cn/wenda/detail-1000363.html)
+2017-08-22 18:24:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000365.html> (referer: http://www.mafengwo.cn/wenda/detail-1000364.html)
+2017-08-22 18:24:46 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000366.html> (referer: http://www.mafengwo.cn/wenda/detail-1000365.html)
+2017-08-22 18:24:51 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000367.html> (referer: http://www.mafengwo.cn/wenda/detail-1000366.html)
+2017-08-22 18:24:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000368.html> (referer: http://www.mafengwo.cn/wenda/detail-1000367.html)
+2017-08-22 18:25:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000369.html> (referer: http://www.mafengwo.cn/wenda/detail-1000368.html)
+2017-08-22 18:25:03 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000370.html> (referer: http://www.mafengwo.cn/wenda/detail-1000369.html)
+2017-08-22 18:25:05 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000371.html> (referer: http://www.mafengwo.cn/wenda/detail-1000370.html)
+2017-08-22 18:25:10 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000372.html> (referer: http://www.mafengwo.cn/wenda/detail-1000371.html)
+2017-08-22 18:25:14 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000373.html> (referer: http://www.mafengwo.cn/wenda/detail-1000372.html)
+2017-08-22 18:25:15 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000374.html> (referer: http://www.mafengwo.cn/wenda/detail-1000373.html)
+2017-08-22 18:25:21 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000375.html> (referer: http://www.mafengwo.cn/wenda/detail-1000374.html)
+2017-08-22 18:25:25 [scrapy.extensions.logstats] INFO: Crawled 302 pages (at 15 pages/min), scraped 14 items (at 0 items/min)
+2017-08-22 18:25:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000376.html> (referer: http://www.mafengwo.cn/wenda/detail-1000375.html)
+2017-08-22 18:25:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000376.html>
+{'data': {'_id': ObjectId('599c06965e5cca39d1899923'),
+          'answer': [['0',
+                      '5月10号左右正常情况温度比较适宜，穿件外套加短袖就行（拍冷的话短袖改薄的长袖也行），外套主要是早晚穿一下，提前一周可以上“天气在线”查一下具体预报，我觉得那个网站挺准的。记得带吧伞，没雨可以撑太阳，下雨可以挡雨。祝你来我们无锡玩的开心:)                               '],
+                     ['0',
+                      '5/10还没算是黄梅季。只是早晚会比较凉些。现在看天气还有蛮多不确定的。一般长袖T恤加外套就可以了！热了外套脱掉。希望对你有帮助！                               '],
+                     ['1',
+                      '气温有点适中，早晚T恤加外套，中午只穿T恤就可以了，天气的话，有时会下雨，但是不影响出行。记得带好雨伞，以防万一。                               '],
+                     ['0',
+                      '应该会有雨，那边经常会下雨的，带上雨伞，穿着的话天气较冷建议着厚外套加毛衣等服装，中午热了可以再脱，冷了多受罪                               '],
+                     ['0',
+                      '只能说时晴时雨 还没有到真正的雨季 最好还是参考天气预报 穿T加一件外套即可  中午微热 '
+                      '晚上有点凉                               '],
+                     ['0',
+                      '无锡，我曾路过。5月份，应该是23多度吧，穿条牛仔裤、T恤，再搭一件长袖就行。                               '],
+                     ['0',
+                      '南方最爱下雨了，建议带着雨伞，下雨防雨，晴天防晒，短信，外套热了还能脱，妥妥的                               '],
+                     ['0',
+                      '是雨季，但保不准哪天下雨。 '
+                      '准备个薄外套就可以了。不会很冷了。                               '],
+                     ['0',
+                      '正常情况天气已经热了，一件衬衣，备用一件长袖即可，雨具要带。                               '],
+                     ['0',
+                      '早晚冷，白天热。短袖加针织衫。雨季一般在刚放暑假左右。                               '],
+                     ['0',
+                      '到时候看天气预报，现在不好说，短袖长袖个一件                               '],
+                     ['0',
+                      '一件衬衣吧，女孩子怕晒，那就多备用一件长袖                               '],
+                     ['0',
+                      '那时候天气应该热了··女生就带点防晒霜                               '],
+                     ['0', '看看天气预报吧。。带件外套 长裤。。                               '],
+                     ['0', '气温刚好，一件衣服就够了                               ']],
+          'detail': '5月10日左右去,那边的天气怎么样,是雨季吗,穿什么样的衣服合适?',
+          'lables': ['穿衣', '天气', '无锡'],
+          'location': '无锡',
+          'title': '5月10日左右去无锡,那边的天气怎么样,是雨季吗,穿什么样的衣服合适?'}}
+2017-08-22 18:25:27 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000377.html> (referer: http://www.mafengwo.cn/wenda/detail-1000376.html)
+2017-08-22 18:25:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000378.html> (referer: http://www.mafengwo.cn/wenda/detail-1000377.html)
+2017-08-22 18:25:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000378.html>
+{'data': {'_id': ObjectId('599c069a5e5cca39d1899925'),
+          'answer': [['0',
+                      '穆拉诺岛  总督府  叹息桥  圣马可教堂圣  马可广场  黄金宫  雷雅托桥 学院美术馆  '
+                      '做公交船                               '],
+                     ['1',
+                      '圈定了要去的几个点：圣马可、叹息桥、大公府、丽都岛、彩色岛、玻璃岛。这几处景点是公认威尼斯最值得去的。                               '],
+                     ['0',
+                      '穆拉诺岛 总督府 叹息桥 圣马可教堂圣 马可广场 黄金宫 雷雅托桥 学院美术馆 '
+                      '做公交船                               '],
+                     ['0',
+                      '早上早点出门，一天时间足够转了。先去玻璃到回程从马可波罗广场顺路走回车站就好。                               '],
+                     ['0', '足够逛了 来张天票 船很便捷                               '],
+                     ['0', '去一个岛就差不多了                               '],
+                     ['0', '一天时间足够转了                               ']],
+          'detail': '我第一天晚上到马可波罗机场，第二天晚上就离开了，也就24h的时间。。。想玩主岛、玻璃岛和彩色岛',
+          'lables': ['行程', '威尼斯'],
+          'location': '威尼斯',
+          'title': '我在威尼斯只有1天时间，请问怎么安排才合理呢？'}}
+2017-08-22 18:25:34 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000379.html> (referer: http://www.mafengwo.cn/wenda/detail-1000378.html)
+2017-08-22 18:25:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000380.html> (referer: http://www.mafengwo.cn/wenda/detail-1000379.html)
+2017-08-22 18:25:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000380.html>
+{'data': {'_id': ObjectId('599c06a55e5cca39d1899927'),
+          'answer': [['0',
+                      '现在还没有到盐田的地铁啊，公交也没有直达车哦，要不先地铁转公交，要不就得转两三次公交。明斯克航母世界的公交站叫航母世界跟中英街离的不远，你搜购物公园到航母世界怎么走就行了，这个车比较多，线路也比较多。或者也可以做到“盐田区政府”这个站下从南边站台马庙街门楼那往南再走200米左右就到了。航母世界到海洋世界做到“小梅沙”，一样要转两趟公交的。                               '],
+                     ['0',
+                      '明斯克挺无聊的耶，你确定你要去吗。。不如直接去小梅沙好了，路途远，其实也够折腾的。一路都没有地铁，如果坐地铁的话 '
+                      '也要换公交。你用百度地图查下好了                               '],
+                     ['0',
+                      '只能公交。。明斯克那边还没通地铁。。而且肯定要转车的。。海洋世界在小梅沙那。。周末最好不要往那边跑。。基本就是在路上堵一天。。                               '],
+                     ['0',
+                      '其实有百度地图就可以了··买什么地图啊 ···                               '],
+                     ['0', '谷歌地图 超级强大，可以离线使用                               '],
+                     ['0', '装导航啊，很方便的                               '],
+                     ['0', '到小梅沙没有地铁                               '],
+                     ['0', '看手机啊                               '],
+                     ['0', '有地铁的                               ']],
+          'detail': '一日游交通求助（购物公园-->明斯克航母世界-->小梅沙海洋世界-->购物公园）有没有地铁还是旅游巴士？怎么坐车好？',
+          'lables': ['公园', '明斯克', '深圳', '一日游', '交通'],
+          'location': '深圳',
+          'title': '深圳一日游交通求助（购物公园--&gt;明斯克航母世界--&gt;小梅沙海洋世界）'}}
+2017-08-22 18:25:42 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000381.html> (referer: http://www.mafengwo.cn/wenda/detail-1000380.html)
+2017-08-22 18:25:46 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000382.html> (referer: http://www.mafengwo.cn/wenda/detail-1000381.html)
+2017-08-22 18:25:50 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000383.html> (referer: http://www.mafengwo.cn/wenda/detail-1000382.html)
+2017-08-22 18:25:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000384.html> (referer: http://www.mafengwo.cn/wenda/detail-1000383.html)
+2017-08-22 18:25:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000385.html> (referer: http://www.mafengwo.cn/wenda/detail-1000384.html)
+2017-08-22 18:25:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000385.html>
+{'data': {'_id': ObjectId('599c06b75e5cca39d1899929'),
+          'answer': [['1',
+                      '基本还算合理，如果要是南投减去加在垦丁会感觉比较好，台湾确实难以取舍，好玩的地方太多了，你这个线路基本不错就是走的有点多，建议南投下次再去，垦丁增加两晚                               '],
+                     ['0',
+                      'D1：XXX---台北桃园机场（国航直达）D2：台北D3：台北-南投县D4：南投-台南D5：台南-高雄D6：高雄-垦丁D7：垦丁-台东知本D8：知本-花莲市D9：花莲D10：花莲-宜兰D11：宜兰-瑞芳九份D12：瑞芳-台北北投D13：台北-万里D14：台北D15：台北-XXX                               '],
+                     ['0',
+                      '环岛下来个人感觉高雄最没意思，城市来讲台南景点最合我口味，花莲的自然景致是最好的。粗看你的行程没什么大问题，不过细化到各类交通的时候可能会出现麻烦。尤其是东海岸这里，需要后期注意一下。个人感觉垦丁一整天游玩时间就够了，实在没有异于其他海岛的特色。                               '],
+                     ['0',
+                      '建议：桃园机场直接从南投开始玩，然后高雄、垦丁、花莲，玩九分、平溪线后，可以考虑在基隆住一夜，第二天玩野柳，将台北留在最后一整块时间里。                               '],
+                     ['0',
+                      '高雄建议住85大厦，上面很多民宿，垦丁可以住垦丁大街                               '],
+                     ['0',
+                      '高雄就是台湾南部最大的城市，去垦丁必须要路过                               '],
+                     ['0',
+                      '咱们时间一样  方便的话加我微信WL9890                               '],
+                     ['0', '什么时候去呢？                               '],
+                     ['0', '住民宿                               '],
+                     ['0', '酱油                               ']],
+          'detail': '中午桃园机场-（2晚）-南投（2晚）-高雄（2晚）-垦丁（2晚）-花莲（3晚）-（4晚，含九份，淡水，野柳，阳明山），请问此行程是否合理，具体交通住宿请指点。',
+          'lables': ['自由行', '行程', '台湾', '交通', '住宿', '经典行程', '五天深度行程'],
+          'location': '台北',
+          'title': '台湾15天自由行（清闲）大家帮我看看此行程是否合理，具体交通住宿请指点。'}}
+2017-08-22 18:26:01 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000386.html> (referer: http://www.mafengwo.cn/wenda/detail-1000385.html)
+2017-08-22 18:26:04 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000387.html> (referer: http://www.mafengwo.cn/wenda/detail-1000386.html)
+2017-08-22 18:26:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000388.html> (referer: http://www.mafengwo.cn/wenda/detail-1000387.html)
+2017-08-22 18:26:08 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000388.html>
+{'data': {'_id': ObjectId('599c06c05e5cca39d189992b'),
+          'answer': [['1',
+                      '墨尔本中心(Melbourne Central) 是澳洲最大规模的零售商场之一，有超过400 '
+                      '家的商店和澳洲第一家的日本百货公司-- '
+                      '大丸百货(Daimaru)。                               '],
+                     ['5',
+                      'DFO 澳洲最大的OUTLET 就在CITY西面 希尔顿酒店的附近 '
+                      '衣服很便宜                               '],
+                     ['0', '在essendon 也有一家DFO,                               '],
+                     ['1', 'COTTON ON、DFO                               '],
+                     ['0', 'casino后面                               '],
+                     ['0', '打折店                               '],
+                     ['0', '打折店                               '],
+                     ['0', '打折店                               ']],
+          'detail': '朋友说在可以买到便宜又好看的衣服，不知道在哪里可以买到呢？求告诉啊 谢谢啦',
+          'lables': ['穿衣', '购物', '免税店', '墨尔本'],
+          'location': '墨尔本',
+          'title': '朋友说墨尔本有好多便宜又好看的衣服可以买，不知道去哪里可以淘到呢？求告诉啊 &nbsp;谢谢啦'}}
+2017-08-22 18:26:13 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000389.html> (referer: http://www.mafengwo.cn/wenda/detail-1000388.html)
+2017-08-22 18:26:15 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000390.html> (referer: http://www.mafengwo.cn/wenda/detail-1000389.html)
+2017-08-22 18:26:20 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000391.html> (referer: http://www.mafengwo.cn/wenda/detail-1000390.html)
+2017-08-22 18:26:24 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000392.html> (referer: http://www.mafengwo.cn/wenda/detail-1000391.html)
+2017-08-22 18:26:25 [scrapy.extensions.logstats] INFO: Crawled 319 pages (at 17 pages/min), scraped 19 items (at 5 items/min)
+2017-08-22 18:26:28 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000393.html> (referer: http://www.mafengwo.cn/wenda/detail-1000392.html)
+2017-08-22 18:26:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000394.html> (referer: http://www.mafengwo.cn/wenda/detail-1000393.html)
+2017-08-22 18:26:35 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000395.html> (referer: http://www.mafengwo.cn/wenda/detail-1000394.html)
+2017-08-22 18:26:37 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000396.html> (referer: http://www.mafengwo.cn/wenda/detail-1000395.html)
+2017-08-22 18:26:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000397.html> (referer: http://www.mafengwo.cn/wenda/detail-1000396.html)
+2017-08-22 18:26:45 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000398.html> (referer: http://www.mafengwo.cn/wenda/detail-1000397.html)
+2017-08-22 18:26:48 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000399.html> (referer: http://www.mafengwo.cn/wenda/detail-1000398.html)
+2017-08-22 18:26:53 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000400.html> (referer: http://www.mafengwo.cn/wenda/detail-1000399.html)
+2017-08-22 18:26:55 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000401.html> (referer: http://www.mafengwo.cn/wenda/detail-1000400.html)
+2017-08-22 18:26:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000402.html> (referer: http://www.mafengwo.cn/wenda/detail-1000401.html)
+2017-08-22 18:27:00 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000403.html> (referer: http://www.mafengwo.cn/wenda/detail-1000402.html)
+2017-08-22 18:27:05 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000404.html> (referer: http://www.mafengwo.cn/wenda/detail-1000403.html)
+2017-08-22 18:27:09 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000405.html> (referer: http://www.mafengwo.cn/wenda/detail-1000404.html)
+2017-08-22 18:27:12 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000406.html> (referer: http://www.mafengwo.cn/wenda/detail-1000405.html)
+2017-08-22 18:27:16 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000407.html> (referer: http://www.mafengwo.cn/wenda/detail-1000406.html)
+2017-08-22 18:27:18 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000408.html> (referer: http://www.mafengwo.cn/wenda/detail-1000407.html)
+2017-08-22 18:27:21 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000409.html> (referer: http://www.mafengwo.cn/wenda/detail-1000408.html)
+2017-08-22 18:27:25 [scrapy.extensions.logstats] INFO: Crawled 336 pages (at 17 pages/min), scraped 19 items (at 0 items/min)
+2017-08-22 18:27:30 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000410.html> (referer: http://www.mafengwo.cn/wenda/detail-1000409.html)
+2017-08-22 18:27:33 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000411.html> (referer: http://www.mafengwo.cn/wenda/detail-1000410.html)
+2017-08-22 18:27:36 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000412.html> (referer: http://www.mafengwo.cn/wenda/detail-1000411.html)
+2017-08-22 18:27:40 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000413.html> (referer: http://www.mafengwo.cn/wenda/detail-1000412.html)
+2017-08-22 18:27:43 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000414.html> (referer: http://www.mafengwo.cn/wenda/detail-1000413.html)
+2017-08-23 14:31:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'qa.extensions.myextensions.SpiderOpenCloseLogging']
+2017-08-23 14:31:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'qa.middlewares.RandomUserAgent',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-08-23 14:31:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-08-23 14:31:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['qa.pipelines.MongoPipeline']
+2017-08-23 14:31:20 [scrapy.core.engine] INFO: Spider opened
+2017-08-23 14:31:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-08-23 14:31:20 [qa.extensions.myextensions] INFO: opened spider hello worldqaspider
+2017-08-23 14:31:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-08-23 14:31:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/robots.txt> (referer: None)
+2017-08-23 14:31:26 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000000.html> (referer: None)
+2017-08-23 14:31:29 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000415.html> (referer: http://www.mafengwo.cn/wenda/detail-1000000.html)
+2017-08-23 14:31:32 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000416.html> (referer: http://www.mafengwo.cn/wenda/detail-1000415.html)
+2017-08-23 14:31:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000417.html> (referer: http://www.mafengwo.cn/wenda/detail-1000416.html)
+2017-08-23 14:31:36 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000417.html>
+{'data': {'_id': ObjectId('599d21485e5cca193bf01bac'),
+          'answer': [['0',
+                      'D1: 只要確認好時間, 沒有啥問題D2: 清境沒有很大, 所以基本上中午前就可以離開, 下山到埔里後, '
+                      '再轉搭巴士到日月潭, 日月潭也沒有很大, 所以一個下午, 時間上OK, '
+                      '傍晚再直接從日月潭搭車到台中就可以(1個多小時車程)D3: '
+                      '故宮→中正紀念堂→國父紀念館→信義誠品→101(傍晚去101的話可以看夕陽跟夜景)→夜市(最近的夜市是饒河街夜市), '
+                      '不知道是住哪邊, 不過大致上是這樣D4: 貓空,  動物園, 平溪, 十分都是靠東邊, '
+                      '可以先貓空→動物園→平溪(動物園到平溪有接駁公車)→十分(平溪鐵路線), 或是反過來也可以,  反過來的話, '
+                      '可以在貓空看夜景,  基本上交通蠻便利的, 不需要包車, 另外夜市的話, 如果前一天去過饒河街夜市, '
+                      '那可以考慮住宿地點附近的夜市D5: 野柳→淡水, 淡水跟野柳都在台北的北邊, 台北市有直接前往野柳的公車, '
+                      '然後野柳有走北海岸到淡水的公車(1個多小時), 或是考慮這邊包車野柳到淡水的北海岸一日遊, '
+                      '淡水回到市區的途中會經過士林夜市, '
+                      '可以去逛逛大致上就這樣                               '],
+                     ['0',
+                      '安排比较合理，不过要注意从台中去往清境农场的客运班次。很多家客运都去那里，不过你下午去的话肯定错过南投客运直达农场的班次了，所以会在埔里中转停留。那天如果有意外可以直接住在埔里。别的没什么问题。                               '],
+                     ['0',
+                      '安排的比较不错，可以按照自己的行程规划去进行的                               '],
+                     ['0', '安排的比较合理了，可按计划实施了。                               '],
+                     ['0', '安排的比较合理                               '],
+                     ['0', '这安排挺好的                               '],
+                     ['0', '会不会太赶？                               '],
+                     ['0', '挺好                               ']],
+          'detail': '6天5晚 11：30抵达桃园，游玩清境农场+台中+深度游求路线安排 7月四大2小，自由行台湾。想做如下安排： '
+                    'D1: 11:30 抵达桃园——台中——清境农场（宿农场） '
+                    'D2:清境农场游玩——下午台中（宿台中），逢甲夜市等（可否加入日月潭） D3:台中——（ '
+                    '故宫+中正+国父+101+夜市）诚品书店 D4:野柳平溪十分（包车） D5: 猫空动物园+ '
+                    '淡水老街+红毛城+真理大学+渔人码头（拆选） D3_5天不知怎么安排会比较合理，夜市总要去的，求助求助 '
+                    '这样安排不知道可以吗？',
+          'lables': ['行程', '台北', '台中', '清境农场', '经典行程'],
+          'location': '台北',
+          'title': '6天5晚 11：30抵达桃园，游玩清境农场+台中+深度台北游求路线安排'}}
+2017-08-23 14:31:37 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000418.html> (referer: http://www.mafengwo.cn/wenda/detail-1000417.html)
+2017-08-23 14:31:41 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000419.html> (referer: http://www.mafengwo.cn/wenda/detail-1000418.html)
+2017-08-23 14:31:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000420.html> (referer: http://www.mafengwo.cn/wenda/detail-1000419.html)
+2017-08-23 14:31:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000420.html>
+{'data': {'_id': ObjectId('599d21505e5cca193bf01bae'),
+          'answer': [['1',
+                      '访友签证被邀请人需要准备的材料有：签证申请表 照片 护照 你和朋友的书信往来以及合照 '
+                      '聊天记录也行。日本方面准备的材料直接到外务省去问一下就好 或者直接去日本大使馆的网站上查一下那里写的很清楚 '
+                      '有的时候材料会有一些些变动 但是不太大 要以外务省要求的材料为准！有什么问题可以给我留言  我现在在日本 '
+                      '就是办的访友签证过来的！忘了说送签证的问题 一半都是代办机构给送上去 自己应该是送不上去的 我是在北京办的 '
+                      '别的地方的不太了解 一个签证500 基本都是这样的 '
+                      '我推荐国旅                               '],
+                     ['1',
+                      '签证申请表 照片 护照 你和朋友的书信往来以及合照 '
+                      '聊天记录也行                               '],
+                     ['0',
+                      '访友签证需要的证明材料担保人是永驻或三年工作签证但访友签证不容易出                               '],
+                     ['0',
+                      '签证申请表 照片 护照 你和朋友的书信往来以及合照 '
+                      '聊天记录也行。                               '],
+                     ['0',
+                      '这访友签证有收入要求么，这挣得少还是担心啊                               '],
+                     ['0', '原来还能有访友签证啊                               '],
+                     ['0', '一个签证500？                               ']],
+          'detail': '想去旅游，在也有朋友，办签证时是办理探友签证么？需要什么手续资料？可以自己办理吗，还是必须通过指定机构办理？',
+          'lables': ['签证', '出入境', '日本', '签证办理'],
+          'location': '日本',
+          'title': '想去日本旅游，在日本也有朋友，办签证时是办理探友签证么？需要什么手续资料？可以自己办理吗，还是必须通过指定机构办理？'}}
+2017-08-23 14:31:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.mafengwo.cn/wenda/detail-1000421.html> (referer: http://www.mafengwo.cn/wenda/detail-1000420.html)
+2017-08-23 14:31:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.mafengwo.cn/wenda/detail-1000421.html>
+{'data': {'_id': ObjectId('599d21535e5cca193bf01bb0'),
+          'answer': [['0',
+                      'city，州立图书馆前，就可以啦。租赁自行车很简单，也很方便，前30分钟免费。市区里有很多自行车租赁点，大约几百米就有一个，而且所有景点里都有。不仅覆盖区域广，还是联网式全自助 '
+                      '服务。每辆单车每天的费用是5澳元，租用的次数不限，但每次不能超过2小时还车，否则要加收费用，而且超时越长，加收费用就越多。租车既可以按天，也可以按周、按月，但一般都是按天租，作为短途旅行之用。因为如果长途旅行的话，累积起来费用会比较高，不合算。基础价是2.7澳元一天。然后如果每次取了车之后，半个小时之内还到网点去，那么就不收其他的钱。如果从租车到还车的时间段，超过30分钟但是在60分钟之内，就是2澳元；如果超过60分钟不到90分钟，就是7澳元；如果超过90分钟，不到2小时，就是17澳元；另外，每额外的半个小时是10澳元。即：如果每段行程都是30分钟，就没有额外的钱，只要2.7澳元一天。另外：要付50澳元押金每俩车；同时要买一个头盔，5澳元一个。部分7-11有卖。自行车很棒，前面有照明灯，后面有红闪灯。不仅可以变速，而且避震也很好。墨尔本对自行车管理非常严格，不戴安全帽不许上路，并且只能在行车道或者专用 '
+                      '的自行车道骑车。不按规定，被警察抓到可是要罚款的。车道上还安置了专为晚间骑行准备的太阳能led指示灯。一到傍晚，每个骑车人都会自觉地打开车上、衣 '
+                      '服上、帽子上的示意灯，在安全有序的环境中骑行。租车可以直接刷信用卡，需要付50澳元预授权。刷完卡就会给你一个pin码，是数字1、2、3组成的一个5位数，在自行车架子上的按键上输入pin码后，就会发出“嘀”的一声，锁车的小灯变成了绿灯，车就可以推出来骑走了。还车更简单，不管在哪里租借，随便找一个点都可以还。只要把车对准位置，确认小灯变绿灯就ok了。租车的机器上还可查询今天租了几次车，是否还了车等信息。                               '],
+                     ['1',
+                      '澳洲地广人稀，城市里人也不多，因此公共交通的费用相当高。在这种情况下，自行车成了相当受欢迎的代步工具。但如果每个人都骑车进城，交通还会有问题，而且也不方便。墨尔本市区的管理者提供了一个解决方法，他们提供了一批自行车，并在市区内提供了一些停放自行车的地点，人们只要投入2-3个澳元的硬币，就可以把车骑走，并使用一段时间。归还自行车的时候，可以直接还给最近的“自行车站”，不需要还给拿车的那个站。这种方式，好像一些城市的图书馆，从一个馆借，可以从另一个馆还。                               '],
+                     ['0',
+                      'Princes Bridge，Southbank， 每天35 澳元)；St Kilda Cycles(9534 '
+                      '3074，每天20 澳元)。想随时随地租到便宜的自行车， '
+                      '可以联系Rent-a-Bomb(94280088;www.renttabomb.com.au) '
+                      '和Stkilda Car Hire(95255900;24 Grey St)，这两家不需要付押金，起价都是35 '
+                      '澳元/ 天。                               '],
+                     ['3',
+                      '墨尔本市区挺适合骑车的 那个蓝色的公共自行车租赁网络很发达 凭信用卡就可以租车 全自助 '
+                      '每辆单车每天的费用是5澳元（也有每周和每月的） 但刷卡的时候会刷50澳元预授权 每辆车每天租用的次数不限 '
+                      '但每次不能超过2小时还车 否则每次加收若干费用 而且超时还车越长 加收费用越多 另外一点 澳洲汽车必须戴头盔 '
+                      '切记切记                               '],
+                     ['0',
+                      '市区内提供了一些停放自行车的地点，只要投入2-3个澳元的硬币，可以使用车一段时间                               '],
+                     ['0', '墨尔本自行车没汽车方便啊                               '],
+                     ['0', 'Rent-a-Bomb                               '],
+                     ['0', '建议租汽车比较好                               '],
+                     ['0', '....                               ']],
+          'detail': 'RT！！谢谢大家了',
+          'lables': ['自行车', '墨尔本'],
+          'location': '墨尔本',
+          'title': '想知道墨尔本在哪里可以租到自行车？多少钱呢？'}}
+2017-08-23 14:31:50 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000422.html> (referer: http://www.mafengwo.cn/wenda/detail-1000421.html)
+2017-08-23 14:31:54 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000423.html> (referer: http://www.mafengwo.cn/wenda/detail-1000422.html)
+2017-08-23 14:31:58 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000424.html> (referer: http://www.mafengwo.cn/wenda/detail-1000423.html)
+2017-08-23 14:32:02 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000425.html> (referer: http://www.mafengwo.cn/wenda/detail-1000424.html)
+2017-08-23 14:32:06 [scrapy.core.engine] DEBUG: Crawled (302) <GET http://www.mafengwo.cn/wenda/detail-1000426.html> (referer: http://www.mafengwo.cn/wenda/detail-1000425.html)
+2017-08-23 14:32:09 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET http://www.mafengwo.cn/wenda/detail-1000427.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
